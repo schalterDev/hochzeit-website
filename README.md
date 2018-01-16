@@ -1,5 +1,5 @@
-# Webpack Simple Starter
-A simple webpack starter without framework (Like Vue, React, Angular, etc.). This project is inspired from [**vue-cli webpack project**](https://github.com/vuejs/vue-cli#vue-build)
+# Webpack Template
+This project is a fork of [**webpack-simple-starter**](https://github.com/SinanMtl/webpack-simple-starter)
 
 ## Getting Started
 First, install the modules that the project needs.
@@ -29,7 +29,6 @@ config/		# Dev and prod configurations
 src/ 		# Project development files
 |_ scripts/	# Javascript files
 |_ styles/	# Style files (scss)
-|_ views/	# HTML templates (pug)
 static/		# Static files (Like fonts, images)
 ```
 
@@ -37,9 +36,8 @@ static/		# Static files (Like fonts, images)
 - Bootstrap and depended javascript frameworks like jquery. (Client)
 - Babel.js for ES6 compile
 - Sass for CSS
-- Pug for HTML template
 
-Also, this project is supporting hot reload and include **eslint**
+Also, this project is supporting hot reload
 
 ## License
 This project is under the MIT license.
