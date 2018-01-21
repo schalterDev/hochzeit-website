@@ -1,0 +1,62 @@
+{"geschenke":[
+  {
+    "title": "Wasserkocher",
+    "description": "test description",
+    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "product-links": [
+      {
+        "linkText": "test link text",
+        "linkUrl": "https://www.amazon.de"
+      }
+    ],
+    "name": null
+  },
+  {
+    "title": "Schneidebretter",
+    "description": "test description",
+    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "product-links": [
+      {
+        "linkText": "test link text",
+        "linkUrl": "https://www.amazon.de"
+      }
+    ],
+    "name": null
+  },
+  {
+    "title": "Was anderes",
+    "description": "test description",
+    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "product-links": [
+      {
+        "linkText": "test link text",
+        "linkUrl": "https://www.amazon.de"
+      }
+    ],
+    "name": null
+  },
+  {
+    "title": "Noch was",
+    "description": "test description",
+    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "product-links": [
+      {
+        "linkText": "test link text",
+        "linkUrl": "https://www.amazon.de"
+      }
+    ],
+    "name": null
+  },
+  {
+    "title": "Und noch was",
+    "description": "test description",
+    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "product-links": [
+      {
+        "linkText": "test link text",
+        "linkUrl": "https://www.amazon.de"
+      }
+    ],
+    "name": null
+  }
+]}

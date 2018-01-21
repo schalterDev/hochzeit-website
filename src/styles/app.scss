@@ -7,7 +7,216 @@
 @import "helper/anim";
 @import "helper/global";
 @import "helper/tabs";
+@import "helper/bootrap-breakpoint.scss";
 
-body {
-    color: black;
+// Colors
+$accent-color: #467fd9;
+$background-color-content: #fafafa;
+$background-nav: #eeeeee;
+$background-nav-hover: #cccccc;
+$background-color-header: darken($accent-color, 20%);
+
+// widths - heights
+$content-max-width: 100%;
+//$content-width: 1200px;
+
+// paddings-margins-border
+$navigation-height: 60px;
+$padding-main: 10px;
+
+// transition
+$transition-time: 400ms;
+
+// images
+$padding-image: 15px;
+$breakpoint-image: xs;
+
+// All sides
+main {
+  width: 100%;
+  height: auto;
+  margin-top: $navigation-height;
+}
+
+.content {
+  max-width: $content-max-width;
+  background-color: $background-color-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  > div {
+    padding: $padding-main;
+  }
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2em;
+  padding: $padding-main;
+  background-color: $background-color-header;
+}
+
+// Navigation
+.navbar {
+  color: $accent-color;
+  min-height: $navigation-height;
+  padding: 0 16px 0 16px;
+  background-color: $background-nav;
+  text-align: center;
+  justify-content: center;
+  box-shadow: #6a6a6a 0 0 10px 0; //left-right, top-down, blur, size
+
+  .navbar-toggle {
+    background-color: black;
+  }
+  .navbar-nav {
+
+    li {
+      overflow: hidden;
+    }
+
+    li a {
+      padding: 18px 20px !important;
+      transition: $transition-time;
+    }
+
+    li a:hover {
+      background-color: $background-nav-hover;
+      transform: scale(1.1);
+    }
+  }
+
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}
+
+// Loader
+$loader-size: 100px;
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid $accent-color; /* Blue */
+  border-radius: 50%;
+  width: $loader-size;
+  height: $loader-size;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loaderDescription {
+  width: $loader-size * 0.8;
+  position: absolute;
+  font-size: 13px;
+  text-align: center;
+  justify-content: center;
+}
+
+// Home side
+#main {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: center;
+
+  .our-image {
+    padding: $padding-image;
+    flex-grow: 1;
+    align-self: center;
+
+    max-width: 20%;
+    min-width: 300px;
+    height: auto;
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 470px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .greeting-text {
+    display: inline;
+    flex-grow: 1;
+    width: auto;
+    align-self: center;
+  }
+
+  @include breakpoint-until($breakpoint-image) {
+    flex-wrap: wrap;
+    .our-image {
+      max-width: 100%;
+    }
+
+    .greeting-text {
+      padding: 0 $padding-image;
+    }
+  }
+}
+
+// Geschenke
+#geschenke {
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+
+    .grid-element {
+      justify-content: center;
+      .grid-image {
+        width: 250px;
+        background-color: #eee;
+        border-radius: 25px;
+        margin: 10px;
+        overflow: hidden;
+        box-shadow: black 0 0 10px -3px;
+
+        transition: $transition-time;
+
+        &:hover {
+          box-shadow: black 0 0 10px -1px;
+          transform: scale(1.05);
+          cursor: pointer;
+          img {
+            opacity: 0.9;
+          }
+        }
+
+        img {
+          width: 100%;
+          transition: opacity $transition-time;
+        }
+      }
+
+      .grid-description {
+        p {
+          text-align: center;
+          font-size: 18px;
+        }
+      }
+
+      @include breakpoint-until($breakpoint-image) {
+        .grid-image {
+          width: auto;
+          max-width: 80%;
+          min-width: 250px;
+          align-self: center;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
 }

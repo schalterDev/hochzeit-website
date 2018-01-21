@@ -5,6 +5,26 @@ const utils = require('./utils');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const fs = require('fs');
+
+const src_folder = path.join(__dirname, '../src');
+
+//const layout = fs.readFileSync(src_folder + '/templates/layout.html', { encoding: 'utf8' });
+//const navigation = fs.readFileSync(src_folder + '/templates/navigation.html', { encoding: 'utf8' });
+
+const generatePage = template => {
+    const pageContent = fs.readFileSync(template, { encoding: 'utf-8' });
+    let site = layout.replace('{{ PAGE_CONTENT }}', pageContent);
+    site = site.replace('{{ NAVIGATION }}', navigation);
+    return site;
+};
+
+var pages = fs.readdirSync(src_folder).filter(file => {
+    return path.extname(file) === '.html';
+});
+pages = pages.map(file => {
+   return 'src/' + file;
+});
 
 function resolve(dir) {
     return path.join(__dirname, '..', dir);
@@ -72,9 +92,16 @@ module.exports = {
         ],
     },
     plugins: [
+        /*
         new HtmlWebpackPlugin({
+            filename: 'index.html',
             template: './src/index.html',
         }),
+        new HtmlWebpackPlugin({  // Also generate a test.html
+            filename: 'geschenke.html',
+            template: './src/geschenke.html',
+        }),*/
+
         // extract css into its own file
         new ExtractTextPlugin({
             filename: utils.assetsPath('css/[name].[contenthash].css'),
@@ -95,5 +122,12 @@ module.exports = {
             Util: 'exports-loader?Util!bootstrap/js/dist/util',
             Dropdown: 'exports-loader?Dropdown!bootstrap/js/dist/dropdown',
         }),
-    ],
+    ].concat(
+        pages.map(page => new HtmlWebpackPlugin({
+            template: './' + page,
+            //templateContent: generatePage(page),
+            filename: page.replace('src/', ''),
+            hash: true
+        })),
+    ),
 };
