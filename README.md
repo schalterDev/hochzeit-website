@@ -2,6 +2,10 @@
 This project is devolped with the [**webpack-simple-starter**](https://github.com/SinanMtl/webpack-simple-starter)
 
 ## Getting Started
+Be sure you have a up to date [node.js](https://nodejs.org/en/download/package-manager/) version
+
+And of course you need [npm](https://docs.npmjs.com/getting-started/installing-node) installed
+
 First, install the modules that the project needs.
 ```bash
 $ npm install
