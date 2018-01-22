@@ -90,6 +90,12 @@ export class Geschenk {
     getGeschenkModalDom() {
         return this.modalDom;
     }
+
+    getDom() {
+        return this.getGeschenkDom().append(this.getGeschenkModalDom());
+    }
+
+    static getLastElement() {return null};
 }
 
 Geschenk.PREFIXES = {

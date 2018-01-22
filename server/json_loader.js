@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 class JsonLoader {
-    constructor(path, defaultJson) {
+    constructor(path, defaultJson = { elements: []}) {
         this.path = path;
         this.loadJson(defaultJson);
     }
@@ -15,6 +15,11 @@ class JsonLoader {
                 this.json = JSON.parse(fs.readFileSync(this.path, 'utf8'));
             }
         }
+    }
+
+    push(json) {
+        this.json.elements.push(json);
+        save();
     }
 
     save() {

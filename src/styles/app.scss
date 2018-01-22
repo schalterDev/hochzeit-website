@@ -98,26 +98,37 @@ h1 {
 
 // Loader
 $loader-size: 100px;
-.loader {
-  border: 8px solid #f3f3f3; /* Light grey */
-  border-top: 8px solid $accent-color; /* Blue */
-  border-radius: 50%;
-  width: $loader-size;
-  height: $loader-size;
-  animation: spin 2s linear infinite;
-}
+.loaderContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+  .loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid $accent-color; /* Blue */
+    border-radius: 50%;
+    width: $loader-size;
+    height: $loader-size;
+    animation: spin 2s linear infinite;
+  }
 
-.loaderDescription {
-  width: $loader-size * 0.8;
-  position: absolute;
-  font-size: 13px;
-  text-align: center;
-  justify-content: center;
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loaderDescription {
+    width: $loader-size * 0.8;
+    position: absolute;
+    font-size: 13px;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 // Home side
@@ -163,6 +174,64 @@ $loader-size: 100px;
     }
   }
 }
+
+// All other sites
+#salate, #nachtisch, #kuchen {
+  table {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 80%;
+    border-collapse: collapse;
+
+    @include breakpoint-until($breakpoint-image) {
+      min-width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #eeeeee;
+    }
+
+    th {
+      background-color: darken($accent-color, 30%);
+      padding-top: 12px;
+      padding-bottom: 12px;
+      color: white;
+    }
+
+    .insertRow {
+      text-align: center;
+
+      .btn-new-element {
+        width: 100%;
+        background-color: $accent-color;
+        color: white;
+      }
+    }
+  }
+}
+
+#salate, #nachtisch {
+  table {
+    td:nth-child(1), td:nth-child(2) {
+      width: 40%;
+    }
+
+    td:nth-child(3) {
+      max-width: 20%;
+    }
+  }
+}
+
 
 // Geschenke
 #geschenke {

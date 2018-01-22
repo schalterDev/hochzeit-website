@@ -1,4 +1,19 @@
-{"nachtische": [
+{"elements": [
+  {
+    "nachtisch": "quark",
+    "name": "Name der Person",
+    "anzahl": 5
+  },
+  {
+    "nachtisch": "quark",
+    "name": "Name der Person",
+    "anzahl": 5
+  },
+  {
+    "nachtisch": "quark",
+    "name": "Name der Person",
+    "anzahl": 5
+  },
   {
     "nachtisch": "quark",
     "name": "Name der Person",

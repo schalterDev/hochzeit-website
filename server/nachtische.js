@@ -4,7 +4,7 @@ const NACHTISCH_FILE = 'data/nachtische.json';
 
 class Nachtische extends jsonLoader{
     constructor() {
-        super(NACHTISCH_FILE, { nachtische: [] ,});
+        super(NACHTISCH_FILE);
     }
 
     getNachtische() {
@@ -14,8 +14,7 @@ class Nachtische extends jsonLoader{
     addNachtisch(kuchen, name, count) {
         console.log(`Save kuchen: kuchen: ${kuchen}, name: ${name}, count: ${count}`);
 
-        this.json.nachtische.push({kuchen: kuchen, name: name, anzahl: count})
-        this.save();
+        super.push({kuchen: kuchen, name: name, anzahl: count})
     }
 }
 

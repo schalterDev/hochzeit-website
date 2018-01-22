@@ -4,7 +4,7 @@ const SALATE_FILE = 'data/salate.json';
 
 class Salate extends jsonLoader{
     constructor() {
-        super(SALATE_FILE, { salate: [] ,});
+        super(SALATE_FILE);
     }
 
     getSalate() {
@@ -14,8 +14,7 @@ class Salate extends jsonLoader{
     addSalat(salat, name, count) {
         console.log(`Save salate: salat: ${salat}, name: ${name}, count: ${count}`);
 
-        this.json.nachtische.push({salat: salat, name: name, anzahl: count})
-        this.save();
+        super.push({salat: salat, name: name, anzahl: count});
     }
 }
 

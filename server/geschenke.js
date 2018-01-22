@@ -4,7 +4,7 @@ const GESCHENKE_FILE = 'data/geschenke.json';
 
 class Geschenke extends jsonLoader{
     constructor() {
-        super(GESCHENKE_FILE, { geschenke: [] ,});
+        super(GESCHENKE_FILE);
     }
 
     getGeschenke() {
@@ -14,8 +14,8 @@ class Geschenke extends jsonLoader{
     updateGeschenk(title, name) {
         console.log(`Save geschenk: title: ${title}, name: ${name}`);
 
-        let index = this.json.geschenke.findIndex((element) => element.title === title);
-        this.json.geschenke[index].name = name;
+        let index = this.json.elements.findIndex((element) => element.title === title);
+        this.json.elements[index].name = name;
         this.save();
     }
 }

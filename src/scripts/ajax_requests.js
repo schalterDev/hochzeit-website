@@ -8,6 +8,8 @@ function getRequest(url, callback) {
         } else if (xmlHttp.status === 404) {
             callback(null, '404: Server not found');
         }
+
+        //console.log(`ReadyState: ${xmlHttp.readyState}, Status: ${xmlHttp.status}`);
     };
 
     xmlHttp.open('GET', url, true); // true for asynchronous

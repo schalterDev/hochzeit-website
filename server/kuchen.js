@@ -1,21 +1,20 @@
 const jsonLoader = require('./json_loader');
 
-const KUCHEN_FILE = 'data/geschenke.json';
+const KUCHEN_FILE = 'data/kuchen.json';
 
 class Kuchen extends jsonLoader{
     constructor() {
-        super(KUCHEN_FILE, { kuchen: [] ,});
+        super(KUCHEN_FILE);
     }
 
     getKuchen() {
         return this.json;
     }
 
-    addKuchen(kuchen, name,) {
+    addKuchen(kuchen, name) {
         console.log(`Save kuchen: kuchen: ${kuchen}, name: ${name}`);
 
-        this.json.kuchen.push({kuchen: kuchen, name: name})
-        this.save();
+        super.push({kuchen: kuchen, name: name});
     }
 }
 
