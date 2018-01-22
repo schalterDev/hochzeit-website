@@ -7,7 +7,7 @@ const geschenke = require('./geschenke');
 
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
-app.use(serveStatic('../static'));
+app.use(serveStatic('../dist'));
 
 app.get('/api/geschenke', (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
