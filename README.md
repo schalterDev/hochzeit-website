@@ -1,5 +1,5 @@
-# Webpack Template
-This project is a fork of [**webpack-simple-starter**](https://github.com/SinanMtl/webpack-simple-starter)
+# Hochzeit Website
+This project is devolped with the [**webpack-simple-starter**](https://github.com/SinanMtl/webpack-simple-starter)
 
 ## Getting Started
 First, install the modules that the project needs.
@@ -16,8 +16,13 @@ Finally development process done. Let's export for production.
 ```bash
 $ npm run build
 ```
+and start the server
+```bash
+$ server/node index.js
+```
 
 That's it!. Files are ready to under the `dist/` directory for production.
+The node.js server is linking to this files
 
 ## What's in this project?
 
@@ -26,6 +31,8 @@ There are four main directories in project. This directories like below:
 ```
 build/		# Webpack configurations
 config/		# Dev and prod configurations
+dist/       # Files for production
+server/     # node.js server
 src/ 		# Project development files
 |_ scripts/	# Javascript files
 |_ styles/	# Style files (scss)
