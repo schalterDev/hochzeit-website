@@ -1,6 +1,6 @@
 const jsonLoader = require('./json_loader');
 
-const GESCHENKE_FILE = 'geschenke.json';
+const GESCHENKE_FILE = 'data/geschenke.json';
 
 class Geschenke extends jsonLoader{
     constructor() {

@@ -25,10 +25,10 @@ That's it!. Files are ready to under the `dist/` directory for production.
 The node.js server is linking to this files
 
 ## Data Directories
-Geschenke sind in   `server/geschenke.json` gespeichert   
-Kuchen sind in      `server/kuchen.json`    gespeichert   
-Nachtische sind in  `server/nachtische.json` gespeichert   
-Salate sind in      `server/salate.json`    gespeichert   
+Geschenke sind in   `server/data/geschenke.json` gespeichert   
+Kuchen sind in      `server/data/kuchen.json`    gespeichert   
+Nachtische sind in  `server/data/nachtische.json` gespeichert   
+Salate sind in      `server/data/salate.json`    gespeichert   
 
 ## What's in this project?
 
