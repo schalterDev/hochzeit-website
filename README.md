@@ -24,6 +24,12 @@ $ server/node index.js
 That's it!. Files are ready to under the `dist/` directory for production.
 The node.js server is linking to this files
 
+## Data Directories
+Geschenke sind in   `server/geschenke.json` gespeichert   
+Kuchen sind in      `server/kuchen.json`    gespeichert   
+Nachtische sind in  `server/nachtische.json` gespeichert   
+Salate sind in      `server/salate.json`    gespeichert   
+
 ## What's in this project?
 
 ### Directories
