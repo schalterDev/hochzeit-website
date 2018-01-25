@@ -236,6 +236,21 @@ $loader-size: 100px;
 // Geschenke
 #geschenke {
 
+  .modalGeschenk {
+
+    img {
+      width: 100%
+    }
+
+    .buttonName {
+      display: none;
+      float: none;
+      button, input {
+        float: none;
+      }
+    }
+  }
+
   .grid {
     display: flex;
     flex-wrap: wrap;

@@ -47,8 +47,9 @@ export class Geschenk {
     }
 
     _generateModalDom() {
-        this.modalDom = $(`<div class="modal fade" id="${Geschenk.PREFIXES.MODAL_CLASS_PREFIX + this.json.title}" role="dialog" data-backdrop="static" data-keyboard="false"></div>`);
+        this.modalDom = $(`<div class="modalGeschenk modal fade" id="${Geschenk.PREFIXES.MODAL_CLASS_PREFIX + this.json.title}" role="dialog" data-backdrop="static" data-keyboard="false"></div>`);
 
+        // modal-lg to modal-dialog
         let modalDialog = $('<div class="modal-dialog" role="document"></div>');
         let modalContent = $('<div class="modal-content"></div>');
         let modalFooter = $('<div class="modal-footer"></div>');
@@ -58,10 +59,25 @@ export class Geschenk {
                 `<h4 class="modal-title">${this.json.title}</h4>` +
                 '</div>');
 
-        let modalBody = $(`<div class="modal-body">${this.json.description}</div>`);
-        let modalFooterButton = $(`<button type="button" class="btn btn-success" id="${Geschenk.PREFIXES.MODAL_BUTTON_PREFIX + this.json.title}">Send</button>`);
+        let modalBody = $(
+            '<div class="modal-body">' +
+                `<img alt="${this.json.title}" src="${this.json.imageUrl}" />` +
+                this.json.description +
+                '<div>' +
+                    `<button class="btn" id="${this._getIdFor(Geschenk.PREFIXES.MODAL_BUTTON_EXPAND_PREFIX)}">Das möchte ich schenken</button>` +
+                    '<div class="buttonName">' +
+                        '<hr>' +
+                        `<p>Bitte gib deinen Namen ein und klicke unten rechts auf ${Geschenk.TEXT.BUTTON_SEND}</p>` +
+                        '<input type="text" placeholder="Name" required />' +
+                    '</div>' +
+                '</div>' +
+            '</div>');
 
-        modalFooter = modalFooter.append(modalFooterButton);
+        this.modalButtonSend = $(`<button type="button" class="btn btn-success" id="${this._getIdFor(Geschenk.PREFIXES.MODAL_BUTTON_PREFIX)}">Schließen</button>`);
+        this.modalButtonCancel = $(`<button type="button" class="btn btn-warning">Abbrechen</button>`);
+
+        modalFooter = modalFooter.append(this.modalButtonCancel);
+        modalFooter = modalFooter.append(this.modalButtonSend);
         modalContent = modalContent.append(modalHeader);
         modalContent = modalContent.append(modalBody);
         modalContent = modalContent.append(modalFooter);
@@ -69,7 +85,15 @@ export class Geschenk {
         modalDialog = modalDialog.append(modalContent);
         this.modalDom = this.modalDom.append(modalDialog);
 
-        modalFooterButton.on('click', this._clickButtonSend.bind(this));
+        this.nameInputDiv = this.modalDom.find('.buttonName');
+        this.nameInputField = this.nameInputDiv.find('input');
+        this.buttonExpand = this.modalDom.find(`#${this._getIdFor(Geschenk.PREFIXES.MODAL_BUTTON_EXPAND_PREFIX)}`).on('click', this._expandName.bind(this));
+        this.modalButtonSend.on('click', () => this._clickButtonSend.call(this));
+        this.modalButtonCancel.on('click', () => this._clickButtonSend.call(this, true));
+        this.nameInputField.on('input', () => this._inputName.call(this, this.nameInputField.val()));
+        this.modalButtonCancel.hide();
+
+        this.nameInput = false;
     }
 
     _openModal() {
@@ -79,8 +103,39 @@ export class Geschenk {
         });
     }
 
-    _clickButtonSend() {
-        this.modalDom.modal('hide');
+    _expandName() {
+        this.nameInput = true;
+        this.nameInputDiv.show();
+        this.buttonExpand.hide();
+        this.modalButtonCancel.show();
+        this.modalButtonSend.html(Geschenk.TEXT.BUTTON_SEND);
+        this.modalButtonSend.prop("disabled",true);
+    }
+
+    _inputName(name) {
+        this.name = name;
+        if(name)
+            this.modalButtonSend.prop("disabled",false);
+        else
+            this.modalButtonSend.prop("disabled",true);
+    }
+
+    _clickButtonSend(cancle = false) {
+        if(cancle || !this.nameInput) {
+            console.log('cancle modal');
+            this.modalDom.modal('hide');
+        } else {
+            if(this.name) {
+                console.log(`send name: ${this.name}`);
+                this.modalDom.modal('hide');
+            } else {
+                console.log('no name was set');
+            }
+        }
+    }
+
+    _getIdFor(prefix) {
+        return prefix + this.json.title;
     }
 
     getGeschenkDom() {
@@ -98,7 +153,12 @@ export class Geschenk {
     static getLastElement() {return null};
 }
 
+Geschenk.TEXT = {
+    BUTTON_SEND: "Abschicken"
+};
+
 Geschenk.PREFIXES = {
     MODAL_CLASS_PREFIX: "geschenk-modal-",
+    MODAL_BUTTON_EXPAND_PREFIX: "geschenk-button-expand",
     MODAL_BUTTON_PREFIX: "geschenk-button-"
 };
