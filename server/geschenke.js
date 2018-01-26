@@ -15,6 +15,9 @@ class Geschenke extends jsonLoader{
         console.log(`Save geschenk: title: ${title}, name: ${name}`);
 
         let index = this.json.elements.findIndex((element) => element.title === title);
+
+        console.log(`Index: ${index}`);
+
         this.json.elements[index].name = name;
         this.save();
     }

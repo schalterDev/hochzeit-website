@@ -7,8 +7,6 @@ import {Nachtisch} from "./nachtisch";
 const scrollingTime = 500;
 const paddingTop = 125;
 
-const BASE_URL = `http://${location.hostname}:3000`;
-
 const GESCHENKE = $('#geschenke');
 const SALATE = $('#salate');
 const NACHTISCHE = $('#nachtisch');
@@ -21,7 +19,7 @@ loadElements('/api/kuchen', KUCHEN, 'tbody', Kuchen);
 
 function loadElements(url, domElement, childElementSelector, classToInsert) {
     showLoader(domElement);
-    AjaxRequest.getRequest(`${BASE_URL}${url}`, (result, error) => {
+    AjaxRequest.getRequest(`${AjaxRequest.BASE_URL}${url}`, (result, error) => {
         if(result) {
             let elements = result.elements;
 

@@ -10,6 +10,8 @@
 }
  */
 
+import AjaxRequest from "./ajax_requests";
+
 export class Geschenk {
 
     constructor(json) {
@@ -19,7 +21,12 @@ export class Geschenk {
 
     _generateDoms() {
         this._generateGeschenkDom();
-        this._generateModalDom();
+        if(this.json.name) {
+            // no click event
+            this.geschenkDom.addClass('deactivated');
+        } else {
+            this._generateModalDom();
+        }
     }
 
     /*
@@ -34,9 +41,12 @@ export class Geschenk {
      */
     _generateGeschenkDom() {
         this.geschenkDom = $('<div class="grid-element"></div>');
+
+        //TODO change image when name is found
         let image = $(
             '<div class="grid-image">' +
             '<img alt="' + this.json.title + '" src="' + this.json.imageUrl + '" />' +
+            '<img class="not-available-img" src="static/img/nicht-mehr-verfuegbar.png" />' +
             '</div>');
         let description = $('<div class="grid-description"> <p>' + this.json.title + '</p></div>');
 
@@ -62,7 +72,9 @@ export class Geschenk {
         let modalBody = $(
             '<div class="modal-body">' +
                 `<img alt="${this.json.title}" src="${this.json.imageUrl}" />` +
+                '<p>' +
                 this.json.description +
+                '</p>' +
                 '<div>' +
                     `<button class="btn" id="${this._getIdFor(Geschenk.PREFIXES.MODAL_BUTTON_EXPAND_PREFIX)}">Das möchte ich schenken</button>` +
                     '<div class="buttonName">' +
@@ -97,10 +109,12 @@ export class Geschenk {
     }
 
     _openModal() {
-        this.modalDom.modal('show',{
-            backdrop: 'static',
-            keyboard: false,
-        });
+        if(this.modalDom) {
+            this.modalDom.modal('show', {
+                backdrop: 'static',
+                keyboard: false,
+            });
+        }
     }
 
     _expandName() {
@@ -126,8 +140,10 @@ export class Geschenk {
             this.modalDom.modal('hide');
         } else {
             if(this.name) {
-                console.log(`send name: ${this.name}`);
                 this.modalDom.modal('hide');
+
+                AjaxRequest.postMessage(AjaxRequest.BASE_URL + '/api/geschenke',
+                    `name=${this.name}&title=${this.json.title}`);
             } else {
                 console.log('no name was set');
             }

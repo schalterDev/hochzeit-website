@@ -1,3 +1,5 @@
+const BASE_URL = `http://${location.hostname}:3000`;
+
 function getRequest(url, callback) {
     const xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function onReadyStageChange() {
@@ -17,7 +19,10 @@ function getRequest(url, callback) {
 }
 
 function postMessage(url, postParameters) {
+    console.log(`Post message, url: ${url}, param: ${postParameters}`);
+
     const xmlHttp = new XMLHttpRequest();
+    xmlHttp.open('POST', url, true); // true for asynchronous
     xmlHttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
     xmlHttp.onreadystatechange = function onReadyStageChange() {
@@ -31,11 +36,11 @@ function postMessage(url, postParameters) {
 
         return false;
     };
-    xmlHttp.open('POST', url, true); // true for asynchronous
     xmlHttp.send(postParameters);
 }
 
 module.exports = {
+    BASE_URL,
     getRequest,
     postMessage,
 };
