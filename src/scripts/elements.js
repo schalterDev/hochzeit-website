@@ -31,8 +31,11 @@ function loadElements(url, domElement, childElementSelector, classToInsert) {
         if(result) {
             let elements = result.elements;
 
-            if(elements.length === 0)
+            /*
+            if(elements.length === 0) {
                 return;
+            }
+            */
 
             let content = domElement.find(childElementSelector);
             content.html("");

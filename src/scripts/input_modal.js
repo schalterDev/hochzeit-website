@@ -90,6 +90,8 @@ function openModal(title, showCount) {
         nameInput.on('input', valueChanged);
     }
 
+    modal.find('.modal-title').html(`Ich bringe einen ${title} mit`);
+
     countInput.val('');
     productInput.val('');
     nameInput.val('');

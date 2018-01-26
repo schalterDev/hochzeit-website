@@ -201,11 +201,15 @@ $loader-size: 100px;
       background-color: #eeeeee;
     }
 
+    .insertRow:hover, .insertRow button:hover {
+      cursor: pointer;
+    }
+
     th {
-      background-color: darken($accent-color, 30%);
+      background-color: lighten($accent-color, 30%);
+      color: #444;
       padding-top: 12px;
       padding-bottom: 12px;
-      color: white;
     }
 
     .insertRow {
