@@ -11,10 +11,10 @@ class Nachtische extends jsonLoader{
         return this.json;
     }
 
-    addNachtisch(kuchen, name, count) {
-        console.log(`Save kuchen: kuchen: ${kuchen}, name: ${name}, count: ${count}`);
+    addNachtisch(nachtisch, name, anzahl) {
+        console.log(`Save nachtisch: nachtisch: ${nachtisch}, name: ${name}, count: ${anzahl}`);
 
-        super.push({kuchen: kuchen, name: name, anzahl: count})
+        super.push({nachtisch: nachtisch, name: name, anzahl: anzahl})
     }
 }
 

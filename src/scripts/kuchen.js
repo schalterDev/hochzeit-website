@@ -5,6 +5,8 @@
 }
  */
 
+import InputModal from "./input_modal";
+
 export class Kuchen {
 
     constructor(json) {
@@ -20,7 +22,7 @@ export class Kuchen {
     }
 
     static onClickNewElement() {
-
+        InputModal.openKuchen();
     }
 
 }

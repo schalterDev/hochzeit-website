@@ -1,7 +1,1 @@
-{"elements": [
-  {
-    "salat": "blabla salat",
-    "name": "Name der Person",
-    "anzahl": 5
-  }
-]}
+{"elements":[{"salat":"blabla salat","name":"Name der Person","anzahl":5},{"salat":"t","name":"t","anzahl":"2"},{"salat":"Salat","name":"Martin","anzahl":"11"}]}

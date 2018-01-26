@@ -6,6 +6,8 @@
 }
 */
 
+import InputModal from "./input_modal";
+
 export class Nachtisch {
 
     constructor(json) {
@@ -21,6 +23,6 @@ export class Nachtisch {
     }
 
     static onClickNewElement() {
-
+        InputModal.openNachtisch();
     }
 }

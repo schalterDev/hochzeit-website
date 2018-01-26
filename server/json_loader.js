@@ -19,7 +19,7 @@ class JsonLoader {
 
     push(json) {
         this.json.elements.push(json);
-        save();
+        this.save();
     }
 
     save() {

@@ -23,7 +23,7 @@ export class Geschenk {
         this._generateGeschenkDom();
         if(this.json.name) {
             // no click event
-            this.geschenkDom.addClass('deactivated');
+            this._deactivateGeschenk();
         } else {
             this._generateModalDom();
         }
@@ -42,7 +42,6 @@ export class Geschenk {
     _generateGeschenkDom() {
         this.geschenkDom = $('<div class="grid-element"></div>');
 
-        //TODO change image when name is found
         let image = $(
             '<div class="grid-image">' +
             '<img alt="' + this.json.title + '" src="' + this.json.imageUrl + '" />' +
@@ -79,7 +78,8 @@ export class Geschenk {
                     `<button class="btn" id="${this._getIdFor(Geschenk.PREFIXES.MODAL_BUTTON_EXPAND_PREFIX)}">Das möchte ich schenken</button>` +
                     '<div class="buttonName">' +
                         '<hr>' +
-                        `<p>Bitte gib deinen Namen ein und klicke unten rechts auf ${Geschenk.TEXT.BUTTON_SEND}</p>` +
+                        `<p>Bitte gib deinen Namen ein und klicke unten rechts auf ${Geschenk.TEXT.BUTTON_SEND}<br/>` +
+                        `Danach kann sich niemand mehr für dieses Geschenk eintragen</p>` +
                         '<input type="text" placeholder="Name" required />' +
                     '</div>' +
                 '</div>' +
@@ -134,6 +134,10 @@ export class Geschenk {
             this.modalButtonSend.prop("disabled",true);
     }
 
+    _deactivateGeschenk() {
+        this.geschenkDom.addClass('deactivated');
+    }
+
     _clickButtonSend(cancle = false) {
         if(cancle || !this.nameInput) {
             console.log('cancle modal');
@@ -144,6 +148,8 @@ export class Geschenk {
 
                 AjaxRequest.postMessage(AjaxRequest.BASE_URL + '/api/geschenke',
                     `name=${this.name}&title=${this.json.title}`);
+
+                this._deactivateGeschenk();
             } else {
                 console.log('no name was set');
             }

@@ -6,6 +6,8 @@
 }
 */
 
+import InputModal from "./input_modal";
+
 export class Salat {
 
     constructor(json) {
@@ -21,7 +23,7 @@ export class Salat {
     }
 
     static onClickNewElement() {
-
+        InputModal.openSalat();
     }
 
 }
