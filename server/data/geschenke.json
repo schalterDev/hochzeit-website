@@ -2,7 +2,7 @@
   {
     "title": "Wasserkocher",
     "description": "test description",
-    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "imageUrl": "static/img/sarah-ich.jpg",
     "productLinks": [
       {
         "linkText": "test link text",
@@ -18,7 +18,7 @@
   {
     "title": "Bettwäsche",
     "description": "test description",
-    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "imageUrl": "static/img/sarah-ich.jpg",
     "productLinks": [
       {
         "linkText": "test link text",
@@ -30,7 +30,7 @@
   {
     "title": "Teppich",
     "description": "test description",
-    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "imageUrl": "static/img/sarah-ich.jpg",
     "productLinks": [
       {
         "linkText": "test link text",
@@ -42,7 +42,7 @@
   {
     "title": "Teller",
     "description": "test description",
-    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "imageUrl": "static/img/sarah-ich.jpg",
     "productLinks": [
       {
         "linkText": "test link text",
@@ -54,7 +54,7 @@
    {
     "title": "Schüsseln",
     "description": "test description",
-    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "imageUrl": "static/img/sarah-ich.jpg",
     "productLinks": [
       {
         "linkText": "test link text",
@@ -66,7 +66,7 @@
  {
     "title": "Staubsauger",
     "description": "test description",
-    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "imageUrl": "static/img/sarah-ich.jpg",
     "productLinks": [
       {
         "linkText": "test link text",
@@ -78,7 +78,7 @@
   { 
     "title": "Teekanne",
     "description": "test description",
-    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "imageUrl": "static/img/sarah-ich.jpg",
     "productLinks": [
       {
         "linkText": "test link text",
@@ -90,7 +90,7 @@
   {
     "title": "Wanderrucksack",
     "description": "test description",
-    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "imageUrl": "static/img/sarah-ich.jpg",
     "productLinks": [
       {
         "linkText": "test link text",
@@ -102,7 +102,7 @@
   {
     "title": "Zelt",
     "description": "test description",
-    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "imageUrl": "static/img/sarah-ich.jpg",
     "productLinks": [
       {
         "linkText": "test link text",
@@ -114,7 +114,7 @@
   {
     "title": "Gefrierschrank",
     "description": "test description",
-    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "imageUrl": "static/img/sarah-ich.jpg",
     "productLinks": [
       {
         "linkText": "test link text",
@@ -126,7 +126,7 @@
   {
     "title": "Schneidebretter",
     "description": "test description",
-    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "imageUrl": "static/img/sarah-ich.jpg",
     "productLinks": [
       {
         "linkText": "test link text",
@@ -138,7 +138,7 @@
   {
     "title": "Was anderes",
     "description": "test description",
-    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "imageUrl": "static/img/sarah-ich.jpg",
     "productLinks": [
       {
         "linkText": "test link text",
@@ -150,7 +150,7 @@
   {
     "title": "Noch was",
     "description": "test description",
-    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "imageUrl": "static/img/sarah-ich.jpg",
     "productLinks": [
       {
         "linkText": "test link text",
@@ -162,7 +162,7 @@
   {
     "title": "Und noch was",
     "description": "test description",
-    "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
+    "imageUrl": "static/img/sarah-ich.jpg",
     "productLinks": [
       {
         "linkText": "test link text",
