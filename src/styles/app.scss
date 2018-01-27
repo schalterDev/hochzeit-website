@@ -264,6 +264,14 @@ $loader-size: 100px;
     .grid-element {
       justify-content: center;
 
+      .geschenk-description {
+        padding-top: 10px;
+      }
+
+      .geschenk-expand {
+        margin-top: 10px;
+      }
+
       .not-available-img {
         display: none;
         margin-top: -100%;
@@ -272,6 +280,13 @@ $loader-size: 100px;
         img {
           height: 100%;
           width: 100%;
+        }
+
+        p {
+          display: inline;
+          position: relative;
+          margin-left: -100%;
+          width: 300px;
         }
       }
 

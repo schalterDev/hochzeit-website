@@ -3,7 +3,11 @@
     "title": "Wasserkocher",
     "description": "test description",
     "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
-    "product-links": [
+    "productLinks": [
+      {
+        "linkText": "test link text",
+        "linkUrl": "https://www.amazon.de"
+      },
       {
         "linkText": "test link text",
         "linkUrl": "https://www.amazon.de"
@@ -15,7 +19,7 @@
     "title": "Bettwäsche",
     "description": "test description",
     "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
-    "product-links": [
+    "productLinks": [
       {
         "linkText": "test link text",
         "linkUrl": "https://www.amazon.de"
@@ -27,7 +31,7 @@
     "title": "Teppich",
     "description": "test description",
     "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
-    "product-links": [
+    "productLinks": [
       {
         "linkText": "test link text",
         "linkUrl": "https://www.amazon.de"
@@ -39,7 +43,7 @@
     "title": "Teller",
     "description": "test description",
     "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
-    "product-links": [
+    "productLinks": [
       {
         "linkText": "test link text",
         "linkUrl": "https://www.amazon.de"
@@ -51,7 +55,7 @@
     "title": "Schüsseln",
     "description": "test description",
     "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
-    "product-links": [
+    "productLinks": [
       {
         "linkText": "test link text",
         "linkUrl": "https://www.amazon.de"
@@ -63,7 +67,7 @@
     "title": "Staubsauger",
     "description": "test description",
     "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
-    "product-links": [
+    "productLinks": [
       {
         "linkText": "test link text",
         "linkUrl": "https://www.amazon.de"
@@ -75,7 +79,7 @@
     "title": "Teekanne",
     "description": "test description",
     "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
-    "product-links": [
+    "productLinks": [
       {
         "linkText": "test link text",
         "linkUrl": "https://www.amazon.de"
@@ -87,7 +91,7 @@
     "title": "Wanderrucksack",
     "description": "test description",
     "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
-    "product-links": [
+    "productLinks": [
       {
         "linkText": "test link text",
         "linkUrl": "https://www.amazon.de"
@@ -99,7 +103,7 @@
     "title": "Zelt",
     "description": "test description",
     "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
-    "product-links": [
+    "productLinks": [
       {
         "linkText": "test link text",
         "linkUrl": "https://www.amazon.de"
@@ -111,7 +115,7 @@
     "title": "Gefrierschrank",
     "description": "test description",
     "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
-    "product-links": [
+    "productLinks": [
       {
         "linkText": "test link text",
         "linkUrl": "https://www.amazon.de"
@@ -123,7 +127,7 @@
     "title": "Schneidebretter",
     "description": "test description",
     "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
-    "product-links": [
+    "productLinks": [
       {
         "linkText": "test link text",
         "linkUrl": "https://www.amazon.de"
@@ -135,7 +139,7 @@
     "title": "Was anderes",
     "description": "test description",
     "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
-    "product-links": [
+    "productLinks": [
       {
         "linkText": "test link text",
         "linkUrl": "https://www.amazon.de"
@@ -147,7 +151,7 @@
     "title": "Noch was",
     "description": "test description",
     "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
-    "product-links": [
+    "productLinks": [
       {
         "linkText": "test link text",
         "linkUrl": "https://www.amazon.de"
@@ -159,7 +163,7 @@
     "title": "Und noch was",
     "description": "test description",
     "imageUrl": "http://localhost:8080/static/img/sarah-ich.jpg",
-    "product-links": [
+    "productLinks": [
       {
         "linkText": "test link text",
         "linkUrl": "https://www.amazon.de"

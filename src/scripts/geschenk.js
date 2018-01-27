@@ -3,7 +3,7 @@
     title: title,
     description: description,
     imageUrl: url,
-    product-links: [
+    productLinks: [
         { linkText: linkText, linkUrl: linkUrl, }, ...
     ],
     name: name  //name who wants to buy this present, can be null
@@ -21,11 +21,11 @@ export class Geschenk {
 
     _generateDoms() {
         this._generateGeschenkDom();
+        this._generateModalDom();
         if(this.json.name) {
-            // no click event
             this._deactivateGeschenk();
         } else {
-            this._generateModalDom();
+
         }
     }
 
@@ -44,8 +44,11 @@ export class Geschenk {
 
         let image = $(
             '<div class="grid-image">' +
-            '<img alt="' + this.json.title + '" src="' + this.json.imageUrl + '" />' +
-            '<img class="not-available-img" src="static/img/nicht-mehr-verfuegbar.png" />' +
+                '<div><img alt="' + this.json.title + '" src="' + this.json.imageUrl + '" /></div>' +
+                '<div class="not-available-img">' +
+                    // '<p>Nicht mehr verfügbar los geht es</p>' +
+                    '<img src="static/img/nicht-mehr-verfuegbar.png" />' +
+                '</div>' +
             '</div>');
         let description = $('<div class="grid-description"> <p>' + this.json.title + '</p></div>');
 
@@ -71,11 +74,19 @@ export class Geschenk {
         let modalBody = $(
             '<div class="modal-body">' +
                 `<img alt="${this.json.title}" src="${this.json.imageUrl}" />` +
-                '<p>' +
-                this.json.description +
+                '<p class="geschenk-description">' +
+                    this.json.description +
                 '</p>' +
+                '<h6>Hier findest du ein paar Vorschläge</h6>' +
+                '<ul>' +
+                    this.json.productLinks.map((element) => `<li><a target="_blank" href="${element.linkUrl}">${element.linkText}</a></li>`).join('') +
+                '</ul>' +
                 '<div>' +
-                    `<button class="btn" id="${this._getIdFor(Geschenk.PREFIXES.MODAL_BUTTON_EXPAND_PREFIX)}">Das möchte ich schenken</button>` +
+                    `<button class="btn geschenk-expand" id="${this._getIdFor(Geschenk.PREFIXES.MODAL_BUTTON_EXPAND_PREFIX)}">Das möchte ich schenken</button>` +
+                    '<div class="notAvailable">' +
+                        '<hr>' +
+                        '<p>Dieses Produkt wurde schon von jemandem Ausgewählt</p>' +
+                    '</div>' +
                     '<div class="buttonName">' +
                         '<hr>' +
                         `<p>Bitte gib deinen Namen ein und klicke unten rechts auf ${Geschenk.TEXT.BUTTON_SEND}<br/>` +
@@ -97,6 +108,7 @@ export class Geschenk {
         modalDialog = modalDialog.append(modalContent);
         this.modalDom = this.modalDom.append(modalDialog);
 
+        this.divNotAvailable = this.modalDom.find('.notAvailable');
         this.nameInputDiv = this.modalDom.find('.buttonName');
         this.nameInputField = this.nameInputDiv.find('input');
         this.buttonExpand = this.modalDom.find(`#${this._getIdFor(Geschenk.PREFIXES.MODAL_BUTTON_EXPAND_PREFIX)}`).on('click', this._expandName.bind(this));
@@ -104,6 +116,7 @@ export class Geschenk {
         this.modalButtonCancel.on('click', () => this._clickButtonSend.call(this, true));
         this.nameInputField.on('input', () => this._inputName.call(this, this.nameInputField.val()));
         this.modalButtonCancel.hide();
+        this.divNotAvailable.hide();
 
         this.nameInput = false;
     }
@@ -136,6 +149,10 @@ export class Geschenk {
 
     _deactivateGeschenk() {
         this.geschenkDom.addClass('deactivated');
+        this.buttonExpand.hide();
+        this.modalButtonSend.hide();
+        this.modalButtonCancel.show();
+        this.divNotAvailable.show();
     }
 
     _clickButtonSend(cancle = false) {
