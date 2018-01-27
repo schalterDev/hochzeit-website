@@ -1,4 +1,4 @@
-const BASE_URL = `http://${location.hostname}:3000`;
+const BASE_URL = `https://${location.hostname}/hochzeit-test`;
 
 function getRequest(url, callback) {
     const xmlHttp = new XMLHttpRequest();
