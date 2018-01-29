@@ -46,7 +46,6 @@ export class Geschenk {
             '<div class="grid-image">' +
                 '<div><img alt="' + this.json.title + '" src="' + this.json.imageUrl + '" /></div>' +
                 '<div class="not-available-img">' +
-                    // '<p>Nicht mehr verfügbar los geht es</p>' +
                     '<img src="static/img/nicht-mehr-verfuegbar.png" />' +
                 '</div>' +
             '</div>');
@@ -85,11 +84,11 @@ export class Geschenk {
                     `<button class="btn geschenk-expand" id="${this._getIdFor(Geschenk.PREFIXES.MODAL_BUTTON_EXPAND_PREFIX)}">Das möchte ich schenken</button>` +
                     '<div class="notAvailable">' +
                         '<hr>' +
-                        '<p>Dieses Produkt wurde schon von jemandem Ausgewählt</p>' +
+                        '<p>Dieses Produkt wurde schon von jemandem ausgewählt</p>' +
                     '</div>' +
                     '<div class="buttonName">' +
                         '<hr>' +
-                        `<p>Bitte gib deinen Namen ein und klicke unten rechts auf ${Geschenk.TEXT.BUTTON_SEND}<br/>` +
+                        `<p>Bitte gib deinen Namen ein und klicke unten rechts auf '${Geschenk.TEXT.BUTTON_SEND}'<br/>` +
                         `Danach kann sich niemand mehr für dieses Geschenk eintragen</p>` +
                         '<input type="text" placeholder="Name" required />' +
                     '</div>' +
