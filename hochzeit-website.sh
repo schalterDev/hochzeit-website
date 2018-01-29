@@ -10,6 +10,7 @@ then
 
 # node
 sudo apt update
+sudo apt install -y curl
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo apt-get install -y build-essential
@@ -39,4 +40,4 @@ fi
 npm install
 
 echo "Starting server"
-npm run dev & server/node index.js
+npm run dev & cd server && node index.js
