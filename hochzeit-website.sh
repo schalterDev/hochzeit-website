@@ -40,4 +40,4 @@ fi
 npm install
 
 echo "Starting server"
-npm run dev & node server/index.js
+npm run dev & cd server && node index.js
