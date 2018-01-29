@@ -70,16 +70,22 @@ export class Geschenk {
                 `<h4 class="modal-title">${this.json.title}</h4>` +
                 '</div>');
 
+        let productLinksHtml = "";
+        if(this.json.productLinks) {
+            productLinksHtml =
+                '<h6>Hier findest du ein paar Vorschläge</h6>' +
+                '<ul>' +
+                this.json.productLinks.map((element) => `<li><a target="_blank" href="${element.linkUrl}">${element.linkText}</a></li>`).join('') +
+                '</ul>'
+        }
+
         let modalBody = $(
             '<div class="modal-body">' +
                 `<img alt="${this.json.title}" src="${this.json.imageUrl}" />` +
                 '<p class="geschenk-description">' +
                     this.json.description +
                 '</p>' +
-                '<h6>Hier findest du ein paar Vorschläge</h6>' +
-                '<ul>' +
-                    this.json.productLinks.map((element) => `<li><a target="_blank" href="${element.linkUrl}">${element.linkText}</a></li>`).join('') +
-                '</ul>' +
+                productLinksHtml +
                 '<div>' +
                     `<button class="btn btn-info geschenk-expand" id="${this._getIdFor(Geschenk.PREFIXES.MODAL_BUTTON_EXPAND_PREFIX)}">Das möchte ich schenken</button>` +
                     '<div class="notAvailable">' +

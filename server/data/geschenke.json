@@ -77,7 +77,7 @@
     ],
     "name": null
    },
-   {
+  {
     "title": "Schüsseln",
     "description": "Hier findet ihr ein paar Schüsseln, die uns sehr gut gefallen. 6 Schüsseln können in der Bestellmenge ausgewählt werden.",
     "imageUrl": "static/img/sarah-ich.jpg",
@@ -87,7 +87,9 @@
         "linkUrl": "https://www.depot-online.com/schale-porzellan-diamond-d14cm-x-h7cm-weiss-CHC0074270.html?cgid=001095"
       }
     ],
-     {
+    "name": null
+  },
+  {
     "title": "Tassen",
     "description": "Hier findet ihr ein paar Tassen, die uns sehr gut gefallen. 6 Tassen können in der Bestellmenge ausgewählt werden.",
     "imageUrl": "static/img/sarah-ich.jpg",
@@ -98,12 +100,10 @@
       }
     ],
     "name": null
-   },
-    "name": null
   },
  {
     "title": "Staubsauger",
-    "description": "Damit wir den Staub nicht mit dem Handfeger bekämpfen müssen, wäre ein Staubsauger ganz sinnvoll. Sucht euch aus, wovon ihr überzeugt seid:D",
+    "description": "Damit wir den Staub nicht mit dem Handfeger bekämpfen müssen, wäre ein Staubsauger ganz sinnvoll. Sucht euch aus, wovon ihr überzeugt seid :D",
     "imageUrl": "static/img/sarah-ich.jpg",
     "name": null
   },
@@ -141,42 +141,6 @@
     "title": "Schneidebretter",
     "description": "Damit wir innerhalb der nächsten Woche zu Stammkunden des Pizzaliferanten verkommen, bräuchten wir noch ein paar Schneidebretter. Dann kann auch selbst was leckeres gekocht werden. :)",
     "imageUrl": "static/img/sarah-ich.jpg",
-    "name": null
-  },
-  {
-    "title": "Was anderes",
-    "description": "test description",
-    "imageUrl": "static/img/sarah-ich.jpg",
-    "productLinks": [
-      {
-        "linkText": "test link text",
-        "linkUrl": "https://www.amazon.de"
-      }
-    ],
-    "name": null
-  },
-  {
-    "title": "Noch was",
-    "description": "test description",
-    "imageUrl": "static/img/sarah-ich.jpg",
-    "productLinks": [
-      {
-        "linkText": "test link text",
-        "linkUrl": "https://www.amazon.de"
-      }
-    ],
-    "name": null
-  },
-  {
-    "title": "Und noch was",
-    "description": "test description",
-    "imageUrl": "static/img/sarah-ich.jpg",
-    "productLinks": [
-      {
-        "linkText": "test link text",
-        "linkUrl": "https://www.amazon.de"
-      }
-    ],
     "name": null
   }
 ]}
