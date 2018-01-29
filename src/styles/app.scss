@@ -10,7 +10,7 @@
 @import "helper/bootrap-breakpoint.scss";
 
 // Colors
-$accent-color: #467fd9;
+$accent-color: #3697d9;
 $background-color-content: #fafafa;
 $background-nav: #eeeeee;
 $background-nav-hover: #cccccc;
@@ -55,6 +55,7 @@ h1 {
   font-size: 2em;
   padding: $padding-main;
   background-color: $background-color-header;
+  box-shadow: 0 3px 8px -2px black;
 }
 
 // Navigation
@@ -67,6 +68,9 @@ h1 {
   justify-content: center;
   box-shadow: #6a6a6a 0 0 10px 0; //left-right, top-down, blur, size
 
+  a {
+    color: $accent-color !important;
+  }
   .navbar-toggle {
     background-color: black;
   }

@@ -81,16 +81,16 @@ export class Geschenk {
                     this.json.productLinks.map((element) => `<li><a target="_blank" href="${element.linkUrl}">${element.linkText}</a></li>`).join('') +
                 '</ul>' +
                 '<div>' +
-                    `<button class="btn geschenk-expand" id="${this._getIdFor(Geschenk.PREFIXES.MODAL_BUTTON_EXPAND_PREFIX)}">Das möchte ich schenken</button>` +
+                    `<button class="btn btn-info geschenk-expand" id="${this._getIdFor(Geschenk.PREFIXES.MODAL_BUTTON_EXPAND_PREFIX)}">Das möchte ich schenken</button>` +
                     '<div class="notAvailable">' +
                         '<hr>' +
                         '<p>Dieses Produkt wurde schon von jemandem ausgewählt</p>' +
                     '</div>' +
                     '<div class="buttonName">' +
                         '<hr>' +
-                        `<p>Bitte gib deinen Namen ein und klicke unten rechts auf '${Geschenk.TEXT.BUTTON_SEND}'<br/>` +
-                        `Danach kann sich niemand mehr für dieses Geschenk eintragen</p>` +
+                        `<p>Bitte gib deinen Namen ein und klicke unten rechts auf '${Geschenk.TEXT.BUTTON_SEND}'.</p>` +
                         '<input type="text" placeholder="Name" required />' +
+                        `<p><br/>Danach kann sich niemand mehr für dieses Geschenk eintragen.</p>` +
                     '</div>' +
                 '</div>' +
             '</div>');
