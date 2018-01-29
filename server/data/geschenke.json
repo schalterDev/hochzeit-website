@@ -2,13 +2,13 @@
   {
     "title": "Wasserkocher",
     "description": "Sucht euch einfach etwas raus, wir haben hier keine besonderen Wünsche. Es darf einfach und praktikabel sein, ein ganz normaler Wasserkocher eben. :)",
-    "imageUrl": "static/img/sarah-ich.jpg",
+    "imageUrl": "http://g-ecx.images-amazon.com/images/G/03/kitchen/aplus/B005OGX5TI.bild6_big.jpg",
     "name": null
   },
   {
     "title": "Bettwäsche",
     "description": "Ein zweites Paar Bettwäsche kann nie schaden. Nur bitte darauf achten, dass es zwei mal in 155cm x 220cm ausgewählt ist.",
-    "imageUrl": "static/img/sarah-ich.jpg",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71K%2BjNPZYEL._SL1500_.jpg",
     "productLinks": [
       {
         "linkText": "2x Bettwäsche 155cm x 220cm",
@@ -20,7 +20,7 @@
    {
     "title": "Spannbetttücher",
     "description": "Ein zweites Paar Spannbetttücher kann nie schaden. Wahlweise in Apfelgrün, damit sie zur Bettwäsche passen. ;)",
-    "imageUrl": "static/img/sarah-ich.jpg",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81zysX24muL._SL1500_.jpg",
     "productLinks": [
       {
         "linkText": "Doppelpack Spannbetttücher Apfelgrün",
@@ -32,11 +32,11 @@
   {
     "title": "Teppich",
     "description": "Ein schöner Teppich für ins Wohnzimmer.",
-    "imageUrl": "static/img/sarah-ich.jpg",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/A1tLIXZ1zoL._SL1500_.jpg",
     "productLinks": [
       {
         "linkText": "Teppich 120cm x 170cm",
-        "linkUrl": "https://www.amazon.de"
+        "linkUrl": "https://www.amazon.de/benuta-Teppich-Pastel-Moderner-Schlafzimmer/dp/B00K3F8PL8/ref=sr_1_114?s=kitchen&ie=UTF8&qid=1516749320&sr=1-114&keywords=teppich&th=1"
       }
     ],
     "name": null
@@ -44,7 +44,7 @@
   {
     "title": "Vorhang",
     "description": "Damit wir nicht immer gleich vom ersten Sonnenstrahl des Tages geweckt werden, sind ein paar Verdunklungsvorhänge ganz gut. Bei Bestellmenge bitte 2 in creme auswählen, wenn möglich. :)",
-    "imageUrl": "static/img/sarah-ich.jpg",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71Kk4cYCIGL._SL1500_.jpg",
     "productLinks": [
       {
         "linkText": "2x Verdunklungsvorhang creme",
@@ -56,7 +56,7 @@
   {
     "title": "Teller groß",
     "description": "Hier findet ihr ein paar Teller, die uns sehr gut gefallen. 6 Teller können in der Bestellmenge ausgewählt werden.",
-    "imageUrl": "static/img/sarah-ich.jpg",
+    "imageUrl": "https://www.depot-online.com/dw/image/v2/AATW_PRD/on/demandware.static/-/Sites-depot-master-catalog/default/dwa752c028/images/CHC0068270_088789_CHC0068270-2-teller.jpg?sw=1600&sh=1600",
     "productLinks": [
       {
         "linkText": "6 große Teller",
@@ -68,7 +68,7 @@
   {
     "title": "Teller klein",
     "description": "Hier findet ihr ein paar Teller, die uns sehr gut gefallen. 6 Teller können in der Bestellmenge ausgewählt werden.",
-    "imageUrl": "static/img/sarah-ich.jpg",
+    "imageUrl": "https://www.depot-online.com/dw/image/v2/AATW_PRD/on/demandware.static/-/Sites-depot-master-catalog/default/dw6bafe581/images/CHC0070270_089048_CHC0070270-2-teller.jpg?sw=1600&sh=1600&sfrm=jpg",
     "productLinks": [
       {
         "linkText": "6 kleine Teller",
@@ -80,7 +80,7 @@
   {
     "title": "Schüsseln",
     "description": "Hier findet ihr ein paar Schüsseln, die uns sehr gut gefallen. 6 Schüsseln können in der Bestellmenge ausgewählt werden.",
-    "imageUrl": "static/img/sarah-ich.jpg",
+    "imageUrl": "https://www.depot-online.com/dw/image/v2/AATW_PRD/on/demandware.static/-/Sites-depot-master-catalog/default/dwe133ddd9/images/CHC0074270_088794_CHC0074270-5-schale.jpg?sw=1600&sh=1600",
     "productLinks": [
       {
         "linkText": "6 Schüsseln",
@@ -92,7 +92,7 @@
   {
     "title": "Tassen",
     "description": "Hier findet ihr ein paar Tassen, die uns sehr gut gefallen. 6 Tassen können in der Bestellmenge ausgewählt werden.",
-    "imageUrl": "static/img/sarah-ich.jpg",
+    "imageUrl": "https://www.depot-online.com/dw/image/v2/AATW_PRD/on/demandware.static/-/Sites-depot-master-catalog/default/dw5fea8679/images/CHC0072270_089049_CHC0072270-2-tasse.jpg?sw=1600&sh=1600&sfrm=jpg",
     "productLinks": [
       {
         "linkText": "6 Tassen",
@@ -104,13 +104,13 @@
  {
     "title": "Staubsauger",
     "description": "Damit wir den Staub nicht mit dem Handfeger bekämpfen müssen, wäre ein Staubsauger ganz sinnvoll. Sucht euch aus, wovon ihr überzeugt seid :D",
-    "imageUrl": "static/img/sarah-ich.jpg",
+    "imageUrl": "https://i.otto.de/i/otto/10472165/klein-miele-staubsauger.jpg?$formatz$",
     "name": null
   },
   { 
     "title": "Teekanne",
     "description": "Gerne dürft ihr nach einer schönen Teekanne für uns suchen, es darf auch ganz simpel und praktikabel sein.",
-    "imageUrl": "static/img/sarah-ich.jpg",
+    "imageUrl": "http://www.tedi-shop.com/media/catalog/product/cache/1/image/1000x1000/9df78eab33525d08d6e5fb8d27136e95/t/e/teekanne_950ml_695660010110000000_1.jpg",
     "name": null
   },
   {
@@ -140,7 +140,7 @@
   {
     "title": "Schneidebretter",
     "description": "Damit wir innerhalb der nächsten Woche zu Stammkunden des Pizzaliferanten verkommen, bräuchten wir noch ein paar Schneidebretter. Dann kann auch selbst was leckeres gekocht werden. :)",
-    "imageUrl": "static/img/sarah-ich.jpg",
+    "imageUrl": "https://klotzaufklotz.de/media/image/9a/2a/98/schneidebrett_nussbaum.jpg",
     "name": null
   }
 ]}
