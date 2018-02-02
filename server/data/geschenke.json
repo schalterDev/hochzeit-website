@@ -7,7 +7,7 @@
   },
   {
     "title": "Bettwäsche",
-    "description": "Ein zweites Paar Bettwäsche kann nie schaden. Nur bitte darauf achten, dass es zwei mal in 155cm x 220cm ausgewählt ist.",
+    "description": "Ein zweites Paar Bettwäsche kann nie schaden. Nur bitte darauf achten, dass sie zwei mal in 155cm x 220cm gekauft wird. Falls ihr nicht auf Amazon bestellen wollt könnt ihr aber gerne auch im Geschäft etwas schönes, farbiges für uns aussuchen.",
     "imageUrl": "static/img/bettwaesche.jpg",
     "productLinks": [
       {
@@ -15,11 +15,12 @@
         "linkUrl": "https://www.amazon.de/Bierbaum-4757_67-Mako-Satin-Bettw%C3%A4sche-Dessin-petrol/dp/B00HDE1H58/ref=sr_1_4?s=kitchen&ie=UTF8&qid=1516635690&sr=1-4&keywords=bierbaum%2Bbettw%C3%A4sche%2Bsatin&th=1"
       }
     ],
-    "name": null
+    "name": null,
+    "vorschlag": true
   },
    {
     "title": "Spannbetttücher",
-    "description": "Ein zweites Paar Spannbetttücher kann nie schaden. Wahlweise in Apfelgrün, damit sie zur Bettwäsche passen. ;)",
+    "description": "Ein zweites Paar Spannbetttücher kann nie schaden. Wahlweise in Apfelgrün, damit sie zur Bettwäsche passen. Andernfalls könnt ihr aber gerne auch irgendetwas im Geschäft für uns kaufen, das euch gefällt (zweifache Ausführung bitte). ;)",
     "imageUrl": "static/img/spannbettuch.jpg",
     "productLinks": [
       {
@@ -27,18 +28,13 @@
         "linkUrl": "https://www.amazon.de/Jersey-Spannbettlaken-90x200-Boxspringbetten-Mako-Baumwolle/dp/B073WV6D3H/ref=sr_1_24?s=kitchen&ie=UTF8&qid=1516635910&sr=1-24&keywords=spannbettlaken%2B90x200&th=1"
       }
     ],
-    "name": null
+    "name": null,
+    "vorschlag": true
   },
   {
     "title": "Teppich",
-    "description": "Ein schöner Teppich für ins Wohnzimmer. Am besten wären die Maße 120cm x 170cm.",
-    "imageUrl": "static/img/teppich.jpg",
-    "productLinks": [
-      {
-        "linkText": "Teppich 120cm x 170cm",
-        "linkUrl": "https://www.amazon.de/benuta-Teppich-Pastel-Moderner-Schlafzimmer/dp/B00K3F8PL8/ref=sr_1_114?s=kitchen&ie=UTF8&qid=1516749320&sr=1-114&keywords=teppich&th=1"
-      }
-    ],
+    "description": "Ein schöner cremefarbener Hochfloorteppich für ins Wohnzimmer. Am besten wären die Maße 120cm x 170cm. Zu finden sind solche Teppiche beinahe in jedem Möbelgeschäft.",
+    "imageUrl": "https://www.teppich.de/item/images/6258/1000x1000/shaggy-teppich-hochflor-teppiche-langflor-wohnzimm_3.jpg",
     "name": null
   },
   {
@@ -51,7 +47,8 @@
         "linkUrl": "https://www.amazon.de/heimtexland-Verdunklungsgardine-Thermovorhang-%C3%96senschal-BLICKDICHT/dp/B00B38BVDI/ref=sr_1_5?s=kitchen&ie=UTF8&qid=1516747727&sr=1-5&keywords=verdunkelungsvorhang&th=1"
       }
     ],
-    "name": null
+    "name": null,
+    "vorschlag": false
   },
   {
     "title": "Teller groß",
@@ -63,7 +60,8 @@
         "linkUrl": "https://www.depot-online.com/teller-porzellan-diamond-d27cm-weiss-CHC0068270.html"
       }
     ],
-    "name": null
+    "name": null,
+    "vorschlag": false
    },
   {
     "title": "Teller klein",
@@ -75,7 +73,8 @@
         "linkUrl": "https://www.depot-online.com/teller-porzellan-diamond-d20cm-weiss-CHC0070270.html?cgid=001093"
       }
     ],
-    "name": null
+    "name": null,
+    "vorschlag": false
    },
   {
     "title": "Schüsseln",
@@ -87,7 +86,8 @@
         "linkUrl": "https://www.depot-online.com/schale-porzellan-diamond-d14cm-x-h7cm-weiss-CHC0074270.html?cgid=001095"
       }
     ],
-    "name": null
+    "name": null,
+    "vorschlag": false
   },
   {
     "title": "Tassen",
@@ -99,7 +99,8 @@
         "linkUrl": "https://www.depot-online.com/kaffeebecher-porzellan-diamond-370ml-weiss-CHC0072270.html#sz=92&redirected=true&start=1"
       }
     ],
-    "name": null
+    "name": null,
+    "vorschlag": false
   },
  {
     "title": "Staubsauger",
@@ -115,27 +116,21 @@
   },
   {
     "title": "Wanderrucksack",
-    "description": "Um gemeinsame Wanderungen unternehmen zu können, fehlt uns noch ein zweiter großer Rucksack (ca 50 - 60 Liter). Wenn ihr uns damit unterstützen wollt, findet ihr ein passendes Modell hier:",
-    "imageUrl": "static/img/sarah-ich.jpg",
-    "productLinks": [
-      {
-        "linkText": "Trekkingrucksack Herren",
-        "linkUrl": "https://www.amazon.de"
-      }
-    ],
-    "name": null
+    "description": "Um gemeinsame Wanderungen unternehmen zu können, fehlt uns noch ein zweiter großer Rucksack (ca 50 - 60 Liter). Wichtig ist dabei, dass die Träger groß genug sind, damit der Rucksack auf Martins Rücken passt.",
+    "imageUrl": "static/img/sarah-ich.jpg"
   },
   {
     "title": "Zelt",
-    "description": "Es muss nicht immer ein 5-Sterne Hotel sein, ein wind- und wasserdichtes Zelt tut es auch und bereitet uns fast noch mehr Freude. :)",
+    "description": "Es muss nicht immer ein 5-Sterne Hotel sein, ein gutes wind- und wasserdichtes Zelt tut es auch und bereitet uns fast noch mehr Freude. :)",
     "imageUrl": "static/img/sarah-ich.jpg",
     "productLinks": [
       {
         "linkText": "Trekkingzelt 2 Personen",
-        "linkUrl": "https://www.amazon.de"
+        "linkUrl": "https://www.funktionelles.de/Ausruestung/Zelte/Zelte/MSR-Hubba-Hubba-NX-green.htm?shop=life&SessionId=&a=article&ProdNr=1501726&t=66595&c=67730&p=67730"
       }
     ],
-    "name": null
+    "name": null,
+    "vorschlag": false
   },
   {
     "title": "Schneidebretter",
