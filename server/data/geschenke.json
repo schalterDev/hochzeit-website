@@ -2,145 +2,154 @@
   {
     "title": "Wasserkocher",
     "description": "Sucht euch einfach etwas raus, wir haben hier keine besonderen Wünsche. Es darf einfach und praktikabel sein, ein ganz normaler Wasserkocher eben. :)",
-    "imageUrl": "http://g-ecx.images-amazon.com/images/G/03/kitchen/aplus/B005OGX5TI.bild6_big.jpg",
+    "imageUrl": "static/img/wasserkocher.jpg",
     "name": null
   },
   {
     "title": "Bettwäsche",
-    "description": "Ein zweites Paar Bettwäsche kann nie schaden. Nur bitte darauf achten, dass es zwei mal in 155cm x 220cm ausgewählt ist.",
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71K%2BjNPZYEL._SL1500_.jpg",
+    "description": "Ein zweites Paar Bettwäsche kann nie schaden. Nur bitte darauf achten, dass sie zwei mal in 155cm x 220cm gekauft wird. Falls ihr nicht auf Amazon bestellen wollt könnt ihr aber gerne auch im Geschäft etwas schönes, farbiges für uns aussuchen.",
+    "imageUrl": "static/img/bettwaesche.jpg",
     "productLinks": [
       {
         "linkText": "2x Bettwäsche 155cm x 220cm",
         "linkUrl": "https://www.amazon.de/Bierbaum-4757_67-Mako-Satin-Bettw%C3%A4sche-Dessin-petrol/dp/B00HDE1H58/ref=sr_1_4?s=kitchen&ie=UTF8&qid=1516635690&sr=1-4&keywords=bierbaum%2Bbettw%C3%A4sche%2Bsatin&th=1"
       }
     ],
-    "name": null
+    "name": null,
+    "vorschlag": true
   },
    {
     "title": "Spannbetttücher",
-    "description": "Ein zweites Paar Spannbetttücher kann nie schaden. Wahlweise in Apfelgrün, damit sie zur Bettwäsche passen. ;)",
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81zysX24muL._SL1500_.jpg",
+    "description": "Ein zweites Paar Spannbetttücher kann nie schaden. Wahlweise in Apfelgrün, damit sie zur Bettwäsche passen. Andernfalls könnt ihr aber gerne auch irgendetwas im Geschäft für uns kaufen, das euch gefällt (zweifache Ausführung bitte). ;)",
+    "imageUrl": "static/img/spannbettuch.jpg",
     "productLinks": [
       {
         "linkText": "Doppelpack Spannbetttücher Apfelgrün",
         "linkUrl": "https://www.amazon.de/Jersey-Spannbettlaken-90x200-Boxspringbetten-Mako-Baumwolle/dp/B073WV6D3H/ref=sr_1_24?s=kitchen&ie=UTF8&qid=1516635910&sr=1-24&keywords=spannbettlaken%2B90x200&th=1"
       }
     ],
-    "name": null
+    "name": null,
+    "vorschlag": true
   },
   {
     "title": "Teppich",
-    "description": "Ein schöner Teppich für ins Wohnzimmer.",
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/A1tLIXZ1zoL._SL1500_.jpg",
-    "productLinks": [
-      {
-        "linkText": "Teppich 120cm x 170cm",
-        "linkUrl": "https://www.amazon.de/benuta-Teppich-Pastel-Moderner-Schlafzimmer/dp/B00K3F8PL8/ref=sr_1_114?s=kitchen&ie=UTF8&qid=1516749320&sr=1-114&keywords=teppich&th=1"
-      }
-    ],
+    "description": "Ein schöner cremefarbener Hochfloorteppich für ins Wohnzimmer. Am besten wären die Maße 120cm x 170cm. Zu finden sind solche Teppiche beinahe in jedem Möbelgeschäft.",
+    "imageUrl": "static/img/teppich2.jpg",
     "name": null
   },
   {
     "title": "Vorhang",
     "description": "Damit wir nicht immer gleich vom ersten Sonnenstrahl des Tages geweckt werden, sind ein paar Verdunklungsvorhänge ganz gut. Bei Bestellmenge bitte 2 in creme auswählen, wenn möglich. :)",
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71Kk4cYCIGL._SL1500_.jpg",
+    "imageUrl": "static/img/vorhang.jpg",
     "productLinks": [
       {
         "linkText": "2x Verdunklungsvorhang creme",
         "linkUrl": "https://www.amazon.de/heimtexland-Verdunklungsgardine-Thermovorhang-%C3%96senschal-BLICKDICHT/dp/B00B38BVDI/ref=sr_1_5?s=kitchen&ie=UTF8&qid=1516747727&sr=1-5&keywords=verdunkelungsvorhang&th=1"
       }
     ],
-    "name": null
+    "name": null,
+    "vorschlag": false
   },
   {
     "title": "Teller groß",
     "description": "Hier findet ihr ein paar Teller, die uns sehr gut gefallen. 6 Teller können in der Bestellmenge ausgewählt werden.",
-    "imageUrl": "https://www.depot-online.com/dw/image/v2/AATW_PRD/on/demandware.static/-/Sites-depot-master-catalog/default/dwa752c028/images/CHC0068270_088789_CHC0068270-2-teller.jpg?sw=1600&sh=1600",
+    "imageUrl": "static/img/teller-gross.jpg",
     "productLinks": [
       {
         "linkText": "6 große Teller",
         "linkUrl": "https://www.depot-online.com/teller-porzellan-diamond-d27cm-weiss-CHC0068270.html"
       }
     ],
-    "name": null
+    "name": null,
+    "vorschlag": false
    },
   {
     "title": "Teller klein",
     "description": "Hier findet ihr ein paar Teller, die uns sehr gut gefallen. 6 Teller können in der Bestellmenge ausgewählt werden.",
-    "imageUrl": "https://www.depot-online.com/dw/image/v2/AATW_PRD/on/demandware.static/-/Sites-depot-master-catalog/default/dw6bafe581/images/CHC0070270_089048_CHC0070270-2-teller.jpg?sw=1600&sh=1600&sfrm=jpg",
+    "imageUrl": "static/img/teller-klein.jpg",
     "productLinks": [
       {
         "linkText": "6 kleine Teller",
         "linkUrl": "https://www.depot-online.com/teller-porzellan-diamond-d20cm-weiss-CHC0070270.html?cgid=001093"
       }
     ],
-    "name": null
+    "name": null,
+    "vorschlag": false
    },
   {
     "title": "Schüsseln",
     "description": "Hier findet ihr ein paar Schüsseln, die uns sehr gut gefallen. 6 Schüsseln können in der Bestellmenge ausgewählt werden.",
-    "imageUrl": "https://www.depot-online.com/dw/image/v2/AATW_PRD/on/demandware.static/-/Sites-depot-master-catalog/default/dwe133ddd9/images/CHC0074270_088794_CHC0074270-5-schale.jpg?sw=1600&sh=1600",
+    "imageUrl": "static/img/schuessel.jpg",
     "productLinks": [
       {
         "linkText": "6 Schüsseln",
         "linkUrl": "https://www.depot-online.com/schale-porzellan-diamond-d14cm-x-h7cm-weiss-CHC0074270.html?cgid=001095"
       }
     ],
-    "name": null
+    "name": null,
+    "vorschlag": false
   },
   {
     "title": "Tassen",
     "description": "Hier findet ihr ein paar Tassen, die uns sehr gut gefallen. 6 Tassen können in der Bestellmenge ausgewählt werden.",
-    "imageUrl": "https://www.depot-online.com/dw/image/v2/AATW_PRD/on/demandware.static/-/Sites-depot-master-catalog/default/dw5fea8679/images/CHC0072270_089049_CHC0072270-2-tasse.jpg?sw=1600&sh=1600&sfrm=jpg",
+    "imageUrl": "static/img/tasse.jpg",
     "productLinks": [
       {
         "linkText": "6 Tassen",
         "linkUrl": "https://www.depot-online.com/kaffeebecher-porzellan-diamond-370ml-weiss-CHC0072270.html#sz=92&redirected=true&start=1"
       }
     ],
-    "name": null
+    "name": null,
+    "vorschlag": false
   },
  {
     "title": "Staubsauger",
     "description": "Damit wir den Staub nicht mit dem Handfeger bekämpfen müssen, wäre ein Staubsauger ganz sinnvoll. Sucht euch aus, wovon ihr überzeugt seid :D",
-    "imageUrl": "https://i.otto.de/i/otto/10472165/klein-miele-staubsauger.jpg?$formatz$",
+    "imageUrl": "static/img/staubsauger.jpg",
     "name": null
   },
   { 
     "title": "Teekanne",
     "description": "Gerne dürft ihr nach einer schönen Teekanne für uns suchen, es darf auch ganz simpel und praktikabel sein.",
-    "imageUrl": "http://www.tedi-shop.com/media/catalog/product/cache/1/image/1000x1000/9df78eab33525d08d6e5fb8d27136e95/t/e/teekanne_950ml_695660010110000000_1.jpg",
+    "imageUrl": "static/img/teekanne.jpg",
     "name": null
   },
   {
     "title": "Wanderrucksack",
-    "description": "Um gemeinsame Wanderungen unternehmen zu können, fehlt uns noch ein zweiter großer Rucksack (ca 50 - 60 Liter). Wenn ihr uns damit unterstützen wollt, findet ihr ein passendes Modell hier:",
-    "imageUrl": "static/img/sarah-ich.jpg",
+    "description": "Um gemeinsame Wanderungen unternehmen zu können, fehlt uns noch ein zweiter großer Rucksack.<br/><br/>Wenn ihr den selben Rucksack in einem anderen Geschäft seht, könnte ihr den natürlich auch dort kaufen",
+    "imageUrl": "static/img/rucksack.jpg",
     "productLinks": [
       {
-        "linkText": "Trekkingrucksack Herren",
-        "linkUrl": "https://www.amazon.de"
+        "linkText": "Deuter Aircontact 45-10",
+        "linkUrl": "https://www.amazon.de/Deuter-Aircontact-Trekking-Rucksack-3320116-4700-Granite/dp/B01CCD7UMS"
       }
     ],
-    "name": null
+    "name": null,
+    "vorschlag": false
   },
   {
     "title": "Zelt",
-    "description": "Es muss nicht immer ein 5-Sterne Hotel sein, ein wind- und wasserdichtes Zelt tut es auch und bereitet uns fast noch mehr Freude. :)",
-    "imageUrl": "static/img/sarah-ich.jpg",
+    "description": "Es muss nicht immer ein 5-Sterne Hotel sein, ein gutes wind- und wasserdichtes Zelt tut es auch und bereitet uns fast noch mehr Freude. :)<br/><br/>Bitte dieses Zelt kaufen, gerne auch in einem anderen Shop wenn ihr es dort findet",
+    "imageUrl": "static/img/zelt.jpg",
     "productLinks": [
       {
         "linkText": "Trekkingzelt 2 Personen",
-        "linkUrl": "https://www.amazon.de"
+        "linkUrl": "https://www.funktionelles.de/Ausruestung/Zelte/Zelte/MSR-Hubba-Hubba-NX-green.htm?shop=life&SessionId=&a=article&ProdNr=1501726&t=66595&c=67730&p=67730"
       }
     ],
-    "name": null
+    "name": null,
+    "vorschlag": false
   },
   {
     "title": "Schneidebretter",
     "description": "Damit wir innerhalb der nächsten Woche zu Stammkunden des Pizzaliferanten verkommen, bräuchten wir noch ein paar Schneidebretter. Dann kann auch selbst was leckeres gekocht werden. :)",
-    "imageUrl": "https://klotzaufklotz.de/media/image/9a/2a/98/schneidebrett_nussbaum.jpg",
+    "imageUrl": "static/img/schneidebrett.jpg",
     "name": null
+  },
+  {
+    "title": "Geldgeschenk",
+    "description": "Für dich ist bei den anderen Geschenken nichts passendes dabei gewesen? Wir freuen uns auch über Geld, um unsere Haushaltskassen etwas aufzufüllen.",
+    "imageUrl": "static/img/geld.jpg",
+    "noName": true
   }
 ]}
