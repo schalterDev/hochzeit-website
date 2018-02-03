@@ -9,13 +9,9 @@ const fs = require('fs');
 
 const src_folder = path.join(__dirname, '../src');
 
-//const layout = fs.readFileSync(src_folder + '/templates/layout.html', { encoding: 'utf8' });
-//const navigation = fs.readFileSync(src_folder + '/templates/navigation.html', { encoding: 'utf8' });
-
 const generatePage = template => {
     const pageContent = fs.readFileSync(template, { encoding: 'utf-8' });
-    let site = layout.replace('{{ PAGE_CONTENT }}', pageContent);
-    site = site.replace('{{ NAVIGATION }}', navigation);
+    let site = pageContent.replace('{{ URL }}', config.build.assetsSubDirectory);
     return site;
 };
 
@@ -125,7 +121,7 @@ module.exports = {
     ].concat(
         pages.map(page => new HtmlWebpackPlugin({
             template: './' + page,
-            //templateContent: generatePage(page),
+            templateContent: generatePage(page),
             filename: page.replace('src/', ''),
             hash: true
         })),
