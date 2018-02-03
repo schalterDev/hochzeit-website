@@ -34,7 +34,7 @@
   {
     "title": "Teppich",
     "description": "Ein schöner cremefarbener Hochfloorteppich für ins Wohnzimmer. Am besten wären die Maße 120cm x 170cm. Zu finden sind solche Teppiche beinahe in jedem Möbelgeschäft.",
-    "imageUrl": "https://www.teppich.de/item/images/6258/1000x1000/shaggy-teppich-hochflor-teppiche-langflor-wohnzimm_3.jpg",
+    "imageUrl": "static/img/teppich2.jpg",
     "name": null
   },
   {
@@ -116,13 +116,21 @@
   },
   {
     "title": "Wanderrucksack",
-    "description": "Um gemeinsame Wanderungen unternehmen zu können, fehlt uns noch ein zweiter großer Rucksack (ca 50 - 60 Liter). Wichtig ist dabei, dass die Träger groß genug sind, damit der Rucksack auf Martins Rücken passt.",
-    "imageUrl": "static/img/sarah-ich.jpg"
+    "description": "Um gemeinsame Wanderungen unternehmen zu können, fehlt uns noch ein zweiter großer Rucksack.<br/><br/>Wenn ihr den selben Rucksack in einem anderen Geschäft seht, könnte ihr den natürlich auch dort kaufen",
+    "imageUrl": "static/img/rucksack.jpg",
+    "productLinks": [
+      {
+        "linkText": "Deuter Aircontact 45-10",
+        "linkUrl": "https://www.amazon.de/Deuter-Aircontact-Trekking-Rucksack-3320116-4700-Granite/dp/B01CCD7UMS"
+      }
+    ],
+    "name": null,
+    "vorschlag": false
   },
   {
     "title": "Zelt",
-    "description": "Es muss nicht immer ein 5-Sterne Hotel sein, ein gutes wind- und wasserdichtes Zelt tut es auch und bereitet uns fast noch mehr Freude. :)",
-    "imageUrl": "static/img/sarah-ich.jpg",
+    "description": "Es muss nicht immer ein 5-Sterne Hotel sein, ein gutes wind- und wasserdichtes Zelt tut es auch und bereitet uns fast noch mehr Freude. :)<br/><br/>Bitte dieses Zelt kaufen, gerne auch in einem anderen Shop wenn ihr es dort findet",
+    "imageUrl": "static/img/zelt.jpg",
     "productLinks": [
       {
         "linkText": "Trekkingzelt 2 Personen",
@@ -137,5 +145,11 @@
     "description": "Damit wir innerhalb der nächsten Woche zu Stammkunden des Pizzaliferanten verkommen, bräuchten wir noch ein paar Schneidebretter. Dann kann auch selbst was leckeres gekocht werden. :)",
     "imageUrl": "static/img/schneidebrett.jpg",
     "name": null
+  },
+  {
+    "title": "Geldgeschenk",
+    "description": "Für dich ist bei den anderen Geschenken nichts passendes dabei gewesen? Wir freuen uns auch über Geld, um unsere Haushaltskassen etwas aufzufüllen.",
+    "imageUrl": "static/img/geld.jpg",
+    "noName": true
   }
 ]}
