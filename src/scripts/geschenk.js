@@ -6,7 +6,9 @@
     productLinks: [
         { linkText: linkText, linkUrl: linkUrl, }, ...
     ],
-    name: name  //name who wants to buy this present, can be null
+    name: name,  //name who wants to buy this present, can be null
+    vorschlag: true/false,
+    noName: true/false
 }
  */
 
@@ -72,20 +74,23 @@ export class Geschenk {
 
         let productLinksHtml = "";
         if(this.json.productLinks) {
-            productLinksHtml =
-                '<h6>Hier findest du ein paar Vorschläge</h6>' +
+            if(this.json.vorschlag) {
+                productLinksHtml =
+                    '<h6>Das gefällt uns zum Beispiel</h6>'
+            } else {
+                productLinksHtml =
+                    '<h6>Bitte folgendes Produkt kaufen</h6>'
+            }
+
+            productLinksHtml +=
                 '<ul>' +
                 this.json.productLinks.map((element) => `<li><a target="_blank" href="${element.linkUrl}">${element.linkText}</a></li>`).join('') +
-                '</ul>'
+                '</ul>';
         }
 
-        let modalBody = $(
-            '<div class="modal-body">' +
-                `<img alt="${this.json.title}" src="${this.json.imageUrl}" />` +
-                '<p class="geschenk-description">' +
-                    this.json.description +
-                '</p>' +
-                productLinksHtml +
+        let buttonName = "";
+        if(!this.json.noName) {
+            buttonName =
                 '<div>' +
                     `<button class="btn btn-info geschenk-expand" id="${this._getIdFor(Geschenk.PREFIXES.MODAL_BUTTON_EXPAND_PREFIX)}">Das möchte ich schenken</button>` +
                     '<div class="notAvailable">' +
@@ -98,7 +103,17 @@ export class Geschenk {
                         '<input type="text" placeholder="Name" required />' +
                         `<p><br/>Danach kann sich niemand mehr für dieses Geschenk eintragen.</p>` +
                     '</div>' +
-                '</div>' +
+                '</div>';
+        }
+
+        let modalBody = $(
+            '<div class="modal-body">' +
+                `<img alt="${this.json.title}" src="${this.json.imageUrl}" />` +
+                '<p class="geschenk-description">' +
+                    this.json.description +
+                '</p>' +
+                productLinksHtml +
+                buttonName +
             '</div>');
 
         this.modalButtonSend = $(`<button type="button" class="btn btn-success" id="${this._getIdFor(Geschenk.PREFIXES.MODAL_BUTTON_PREFIX)}">Schließen</button>`);
