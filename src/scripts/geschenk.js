@@ -48,7 +48,7 @@ export class Geschenk {
             '<div class="grid-image">' +
                 '<div><img alt="' + this.json.title + '" src="' + location.pathname + this.json.imageUrl + '" /></div>' +
                 '<div class="not-available-img">' +
-                    '<img src="static/img/nicht-mehr-verfuegbar.png" />' +
+                    '<img src="' + location.pathname + 'static/img/nicht-mehr-verfuegbar.png" />' +
                 '</div>' +
             '</div>');
         let description = $('<div class="grid-description"> <p>' + this.json.title + '</p></div>');
