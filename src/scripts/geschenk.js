@@ -184,7 +184,12 @@ export class Geschenk {
                 this.modalDom.modal('hide');
 
                 AjaxRequest.postMessage(AjaxRequest.BASE_URL + '/api/geschenke',
-                    `name=${this.name}&title=${this.json.title}`);
+                    `name=${this.name}&title=${this.json.title}`, (errorCode => {
+                        if(errorCode) {
+                            if(errorCode === 409)
+                                alert("Da war jemand schneller als du: In der Zwischenzeit hat sich schon jemand anderes für dieses Geschenk eingetragen. Bitte lade die Seite neu");
+                        }
+                    }));
 
                 this._deactivateGeschenk();
             } else {

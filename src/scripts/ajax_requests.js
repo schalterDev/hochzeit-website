@@ -38,6 +38,10 @@ function postMessage(url, postParameters, callback) {
                 callback();
         } else if (xmlHttp.status === 403) {
             console.log(`Permission denied post message: ${xmlHttp.responseText}`);
+            callback(403);
+        } else if (xmlHttp.status === 409) {
+            console.log(`Conflict: ${xmlHttp.responseText}`);
+            callback(409);
         }
     };
     xmlHttp.send(postParameters);

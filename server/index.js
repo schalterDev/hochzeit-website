@@ -68,9 +68,12 @@ app.post('/api/geschenke', (req, res) => {
 
     console.log(`Updated geschenke, title: ${title}, name: ${name}`);
 
-    geschenke.updateGeschenk(title, name);
+    let result = geschenke.updateGeschenk(title, name);
 
-    res.status(200);
+    if(result)
+        res.status(200);
+    else
+        res.status(409);
     res.send();
 });
 
