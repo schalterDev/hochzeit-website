@@ -95,7 +95,7 @@ export class Geschenk {
                     `<button class="btn btn-info geschenk-expand" id="${this._getIdFor(Geschenk.PREFIXES.MODAL_BUTTON_EXPAND_PREFIX)}">Das möchte ich schenken</button>` +
                     '<div class="notAvailable">' +
                         '<hr>' +
-                        '<p>Dieses Produkt wurde schon von jemandem ausgewählt</p>' +
+                        '<p>Dieses Produkt wurde schon von jemandem ausgewählt.</p>' +
                     '</div>' +
                     '<div class="buttonName">' +
                         '<hr>' +
