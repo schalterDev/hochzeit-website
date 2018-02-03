@@ -19,10 +19,10 @@ class Geschenke extends jsonLoader{
         if(!this.json.elements[index].name) {
             this.json.elements[index].name = name;
             this.save();
-            return true;
+            return name;
         } else {
             //error already a name
-            return false;
+            return this.json.elements[index].name;
         }
     }
 }

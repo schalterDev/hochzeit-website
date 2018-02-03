@@ -68,13 +68,16 @@ app.post('/api/geschenke', (req, res) => {
 
     console.log(`Updated geschenke, title: ${title}, name: ${name}`);
 
-    let result = geschenke.updateGeschenk(title, name);
+    let nameSaved = geschenke.updateGeschenk(title, name);
 
-    if(result)
+    if(nameSaved === name) {
         res.status(200);
-    else
+        res.send();
+    } else {
         res.status(409);
-    res.send();
+        console.log(`Name already set: ${nameSaved}`);
+        res.send(nameSaved);
+    }
 });
 
 app.put('/api/kuchen', (req, res) => {

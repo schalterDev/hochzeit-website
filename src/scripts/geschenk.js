@@ -184,12 +184,12 @@ export class Geschenk {
                 this.modalDom.modal('hide');
 
                 AjaxRequest.postMessage(AjaxRequest.BASE_URL + '/api/geschenke',
-                    `name=${this.name}&title=${this.json.title}`, (errorCode => {
+                    `name=${this.name}&title=${this.json.title}`, (errorCode, name) => {
                         if(errorCode) {
                             if(errorCode === 409)
-                                alert("Da war jemand schneller als du: In der Zwischenzeit hat sich schon jemand anderes für dieses Geschenk eingetragen. Bitte lade die Seite neu");
+                                alert(`Da war jemand schneller: '${name}' kauft bereits dieses Geschenk. Bitte suche dir ein anderes aus`);
                         }
-                    }));
+                    });
 
                 this._deactivateGeschenk();
             } else {
@@ -199,7 +199,7 @@ export class Geschenk {
     }
 
     _getIdFor(prefix) {
-        return prefix + this.json.title;
+        return prefix + this.json.title.replace(/\s+/g, '');
     }
 
     getGeschenkDom() {
