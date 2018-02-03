@@ -108,7 +108,7 @@ export class Geschenk {
 
         let modalBody = $(
             '<div class="modal-body">' +
-                `<img alt="${this.json.title}" src="${this.json.imageUrl}" />` +
+                `<img alt="${this.json.title}" src="./${this.json.imageUrl}" />` +
                 '<p class="geschenk-description">' +
                     this.json.description +
                 '</p>' +

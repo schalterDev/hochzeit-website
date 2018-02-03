@@ -1,3 +1,6 @@
+//const BASE_URL = location.origin;
+
+// only for development
 const BASE_URL = `http://${location.hostname}:3000`;
 
 function getRequest(url, callback) {
