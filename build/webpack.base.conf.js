@@ -11,7 +11,7 @@ const src_folder = path.join(__dirname, '../src');
 
 const generatePage = template => {
     const pageContent = fs.readFileSync(template, { encoding: 'utf-8' });
-    let site = pageContent.replace('{{ URL }}', config.build.assetsSubDirectory);
+    let site = pageContent.replace('{{ URL }}', config.build.assetsSubDirectory + config.build.assetsPublicPath);
     return site;
 };
 
