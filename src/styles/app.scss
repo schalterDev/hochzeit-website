@@ -181,6 +181,10 @@ $loader-size: 100px;
 
 // All other sites
 #salate, #nachtisch, #kuchen {
+  p {
+    text-align: center;
+  }
+
   table {
     display: none;
     margin-left: auto;
