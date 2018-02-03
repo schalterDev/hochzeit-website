@@ -8,10 +8,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const fs = require('fs');
 
 const src_folder = path.join(__dirname, '../src');
+const isDev = process.env.NODE_ENV === 'development';
 
 const generatePage = template => {
     const pageContent = fs.readFileSync(template, { encoding: 'utf-8' });
-    let site = pageContent.replace('{{ URL }}', config.build.assetsPublicPath + config.build.assetsSubDirectory);
+    let site;
+    if(isDev)
+        site = pageContent.replace('{{ URL }}', config.dev.assetsPublicPath + config.dev.assetsSubDirectory);
+    else
+        site = pageContent.replace('{{ URL }}', config.build.assetsPublicPath + config.build.assetsSubDirectory);
     return site;
 };
 
@@ -25,8 +30,6 @@ pages = pages.map(file => {
 function resolve(dir) {
     return path.join(__dirname, '..', dir);
 }
-
-const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
     entry: {
