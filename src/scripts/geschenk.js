@@ -48,7 +48,7 @@ export class Geschenk {
             '<div class="grid-image">' +
                 '<div><img alt="' + this.json.title + '" src="' + location.pathname + this.json.imageUrl + '" /></div>' +
                 '<div class="not-available-img">' +
-                    '<img src="static/img/nicht-mehr-verfuegbar.png" />' +
+                    '<img src="' + location.pathname + 'static/img/nicht-mehr-verfuegbar.png" />' +
                 '</div>' +
             '</div>');
         let description = $('<div class="grid-description"> <p>' + this.json.title + '</p></div>');
@@ -95,7 +95,7 @@ export class Geschenk {
                     `<button class="btn btn-info geschenk-expand" id="${this._getIdFor(Geschenk.PREFIXES.MODAL_BUTTON_EXPAND_PREFIX)}">Das möchte ich schenken</button>` +
                     '<div class="notAvailable">' +
                         '<hr>' +
-                        '<p>Dieses Produkt wurde schon von jemandem ausgewählt</p>' +
+                        '<p>Dieses Produkt wurde schon von jemandem ausgewählt.</p>' +
                     '</div>' +
                     '<div class="buttonName">' +
                         '<hr>' +
@@ -184,7 +184,12 @@ export class Geschenk {
                 this.modalDom.modal('hide');
 
                 AjaxRequest.postMessage(AjaxRequest.BASE_URL + '/api/geschenke',
-                    `name=${this.name}&title=${this.json.title}`);
+                    `name=${this.name}&title=${this.json.title}`, (errorCode, name) => {
+                        if(errorCode) {
+                            if(errorCode === 409)
+                                alert(`Da war jemand schneller: '${name}' kauft bereits dieses Geschenk. Bitte suche dir ein anderes aus`);
+                        }
+                    });
 
                 this._deactivateGeschenk();
             } else {
@@ -194,7 +199,7 @@ export class Geschenk {
     }
 
     _getIdFor(prefix) {
-        return prefix + this.json.title;
+        return prefix + this.json.title.replace(/\s+/g, '');
     }
 
     getGeschenkDom() {

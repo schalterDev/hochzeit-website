@@ -36,8 +36,12 @@ function postMessage(url, postParameters, callback) {
             console.log(`Response post message: ${xmlHttp.responseText}`);
             if(callback)
                 callback();
-        } else if (xmlHttp.status === 403) {
+        } else if (xmlHttp.readyState === 4 && xmlHttp.status === 403) {
             console.log(`Permission denied post message: ${xmlHttp.responseText}`);
+            callback(403);
+        } else if (xmlHttp.readyState === 4 && xmlHttp.status === 409) {
+            console.log(`Conflict: ${xmlHttp.responseText}`);
+            callback(409, xmlHttp.responseText);
         }
     };
     xmlHttp.send(postParameters);
