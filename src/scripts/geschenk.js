@@ -13,7 +13,6 @@
  */
 
 import AjaxRequest from "./ajax_requests";
-import config from '../../config';
 
 export class Geschenk {
 
@@ -47,7 +46,7 @@ export class Geschenk {
 
         let image = $(
             '<div class="grid-image">' +
-                '<div><img alt="' + this.json.title + '" src="' + this.json.imageUrl + '" /></div>' +
+                '<div><img alt="' + this.json.title + '" src="' + location.pathname + this.json.imageUrl + '" /></div>' +
                 '<div class="not-available-img">' +
                     '<img src="static/img/nicht-mehr-verfuegbar.png" />' +
                 '</div>' +
@@ -109,7 +108,7 @@ export class Geschenk {
 
         let modalBody = $(
             '<div class="modal-body">' +
-                `<img alt="${this.json.title}" src="${config.build.assetsPublicPath + config.build.assetsSubDirectory}${this.json.imageUrl}" />` +
+                `<img alt="${this.json.title}" src="${location.pathname}${this.json.imageUrl}" />` +
                 '<p class="geschenk-description">' +
                     this.json.description +
                 '</p>' +
