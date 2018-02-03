@@ -1,7 +1,7 @@
-//const BASE_URL = location.origin;
+const BASE_URL = location.href;
 
 // only for development
-const BASE_URL = `http://${location.hostname}:3000`;
+//const BASE_URL = `http://${location.hostname}:3000`;
 
 function getRequest(url, callback) {
     const xmlHttp = new XMLHttpRequest();
