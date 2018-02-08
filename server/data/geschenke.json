@@ -33,7 +33,7 @@
   },
   {
     "title": "Teppich",
-    "description": "Ein schöner cremefarbener Hochfloorteppich für ins Wohnzimmer. Am besten wären die Maße 120cm x 170cm. Zu finden sind solche Teppiche beinahe in jedem Möbelgeschäft.",
+    "description": "Ein schöner cremefarbener Hochfloorteppich für ins Wohnzimmer. Am besten sind die Maße 120cm x 170cm. Zu finden sind solche Teppiche beinahe in jedem Möbelgeschäft.",
     "imageUrl": "static/img/teppich2.jpg",
     "name": null
   },
@@ -104,7 +104,7 @@
   },
  {
     "title": "Staubsauger",
-    "description": "Damit wir den Staub nicht mit dem Handfeger bekämpfen müssen, wäre ein Staubsauger ganz sinnvoll. Sucht euch aus, wovon ihr überzeugt seid :D",
+    "description": "Damit wir den Staub nicht mit dem Handfeger bekämpfen müssen, ist ein Staubsauger ganz sinnvoll. Sucht euch aus, wovon ihr überzeugt seid :D",
     "imageUrl": "static/img/staubsauger.jpg",
     "name": null
   },
@@ -142,10 +142,16 @@
   },
   {
     "title": "Schneidebretter",
-    "description": "Damit wir innerhalb der nächsten Woche nicht zu Stammkunden des Pizzaliferanten verkommen, bräuchten wir noch ein paar Schneidebretter. Dann kann auch selbst was leckeres gekocht werden. :)",
+    "description": "Damit wir innerhalb der nächsten Woche nicht zu Stammkunden des Pizzaliferanten verkommen, brauchen wir noch ein paar Schneidebretter. Dann kann auch selbst was leckeres gekocht werden. :)",
     "imageUrl": "static/img/schneidebrett.jpg",
     "name": null
   },
+  {
+    "title": "Wäscheständer",
+    "description": "Damit wir unsere Wäsche nicht trocken föhnen müssen, brauchen wir einen Wäschenständer. Sucht euch was schönes raus.",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71jtwASoszL._SX588_.jpg",
+    "name": null
+  }
   {
     "title": "Geldgeschenk",
     "description": "Für dich ist bei den anderen Geschenken nichts passendes dabei gewesen? Wir freuen uns auch über Geld, um unsere Haushaltskasse etwas aufzufüllen.",
