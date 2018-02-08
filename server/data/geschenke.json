@@ -33,7 +33,7 @@
   },
   {
     "title": "Teppich",
-    "description": "Ein schöner cremefarbener Hochfloorteppich für ins Wohnzimmer. Am besten wären die Maße 120cm x 170cm. Zu finden sind solche Teppiche beinahe in jedem Möbelgeschäft.",
+    "description": "Ein schöner cremefarbener Hochfloorteppich für ins Wohnzimmer. Am besten sind die Maße 120cm x 170cm. Zu finden sind solche Teppiche beinahe in jedem Möbelgeschäft.",
     "imageUrl": "static/img/teppich2.jpg",
     "name": null
   },
@@ -104,7 +104,7 @@
   },
  {
     "title": "Staubsauger",
-    "description": "Damit wir den Staub nicht mit dem Handfeger bekämpfen müssen, wäre ein Staubsauger ganz sinnvoll. Sucht euch aus, wovon ihr überzeugt seid :D",
+    "description": "Damit wir den Staub nicht mit dem Handfeger bekämpfen müssen, ist ein Staubsauger ganz sinnvoll. Sucht euch aus, wovon ihr überzeugt seid :D",
     "imageUrl": "static/img/staubsauger.jpg",
     "name": null
   },
@@ -142,9 +142,54 @@
   },
   {
     "title": "Schneidebretter",
-    "description": "Damit wir innerhalb der nächsten Woche nicht zu Stammkunden des Pizzaliferanten verkommen, bräuchten wir noch ein paar Schneidebretter. Dann kann auch selbst was leckeres gekocht werden. :)",
+    "description": "Damit wir innerhalb der nächsten Woche nicht zu Stammkunden des Pizzaliferanten verkommen, brauchen wir noch ein paar Schneidebretter. Dann kann auch selbst was leckeres gekocht werden. :)",
     "imageUrl": "static/img/schneidebrett.jpg",
     "name": null
+  },
+  {
+    "title": "Wäscheständer",
+    "description": "Damit wir unsere Wäsche nicht trocken föhnen müssen, brauchen wir einen Wäschenständer. Sucht euch was schönes raus.",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71jtwASoszL._SX588_.jpg",
+    "name": null
+  },
+  {
+    "title": "Kartenspiel: Munchkin",
+    "description": "Für gemütliche Spieleabende fehlen uns noch die passenden Spiele. Hier dürft ihr gerne Abhilfe schaffen.",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71OB6w7kxnL._SX425_.jpg",
+    "productLinks": [
+      {
+        "linkText": "Munchkin 1 + 2 (Amazon)",
+        "linkUrl": "https://www.amazon.de/Pegasus-Spiele-17222G-Munchkin/dp/B00BTXM2QC"
+      }
+    ],
+    "name": null,
+    "vorschlag": true
+  },
+  {
+    "title": "Kartenspiel: Ligretto",
+    "description": "Für gemütliche Spieleabende fehlen uns noch die passenden Spiele. Hier dürft ihr gerne Abhilfe schaffen.",
+    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81qMZJPb45L._SX425_.jpg",
+    "productLinks": [
+      {
+        "linkText": "Ligretto (Amazon)",
+        "linkUrl": "https://www.amazon.de/Schmidt-Spiele-01201-Ligretto-grün/dp/B00006YYLV/"
+      }
+    ],
+    "name": null,
+    "vorschlag": true
+  },
+  {
+    "title": "Brettspiel: Zug um Zug",
+    "description": "Für gemütliche Spieleabende fehlen uns noch die passenden Spiele. Hier dürft ihr gerne Abhilfe schaffen.",
+    "imageUrl": "https://images-na.ssl-images-amazon.coma/images/I/618Mk1rDkuL._SX425_.jpg",
+    "productLinks": [
+      {
+        "linkText": "Zug um Zug (Amazon)",
+        "linkUrl": "https://www.amazon.de/Asmodee-Days-Wonder-200098-Europa/dp/B0007XQQSA/"
+      }
+    ],
+    "name": null,
+    "vorschlag": true
   },
   {
     "title": "Geldgeschenk",
