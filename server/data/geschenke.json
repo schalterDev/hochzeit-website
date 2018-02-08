@@ -148,14 +148,53 @@
   },
   {
     "title": "Wäscheständer",
-    "description": "Damit wir unsere Wäsche nicht trocken föhnen müssen, brauchen wir einen Wäschenständer. Sucht euch was schönes raus.",
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71jtwASoszL._SX588_.jpg",
+    "description": "Damit wir unsere Wäsche nicht trocken föhnen müssen, brauchen wir einen Wäschenständer. Sucht euch was schönes raus.<br/>Dazu noch ein paar Wäscheklammern.",
+    "imageUrl": "static/img/waeschestaender.jpg",
     "name": null
   },
   {
-    "title": "Kartenspiel: Munchkin",
-    "description": "Für gemütliche Spieleabende fehlen uns noch die passenden Spiele. Hier dürft ihr gerne Abhilfe schaffen.",
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/71OB6w7kxnL._SX425_.jpg",
+    "title": "Tupperware Behälter klein",
+    "description": "Damit auch die Motten unserem Müsli nichts anhaben können, brauchen wir 2 dieser schönen Behälter.",
+    "imageUrl": "static/img/tupper-behaelter-klein.jpg",
+    "productLinks": [
+      {
+        "linkText": "2x Tupperware Eidgenosse 1.7 L",
+        "linkUrl": "https://www.tupperware.de/produkte/produktuebersicht/produkt/668/A63Eidgenosseoval17l#product-details"
+      }
+    ],
+    "name": null,
+    "vorschlag": false
+  },
+  {
+    "title": "Tupperware Behälter groß",
+    "description": "Damit auch die Motten unserem Mehl nichts anhaben können, brauchen wir 2 dieser schönen Behälter.",
+    "imageUrl": "static/img/tupper-behaelter-gross.jpg",
+    "productLinks": [
+      {
+        "linkText": "2x Tupperware Eidgenosse 2.3 L",
+        "linkUrl": "https://www.tupperware.de/produkte/produktuebersicht/produkt/671/A64Eidgenosseoval23l"
+      }
+    ],
+    "name": null,
+    "vorschlag": false
+  },
+  {
+    "title": "Tupperware Schüsseln",
+    "description": "In einer guten Küche, dürfen diese Schüsseln nicht fehlen.",
+    "imageUrl": "static/img/tupper-schuesseln.jpg",
+    "productLinks": [
+      {
+        "linkText": "Tupperware Clarissa Set",
+        "linkUrl": "https://www.tupperware.de/produkte/produktuebersicht/produkt/191/B02Clarissa%C2%AESet"
+      }
+    ],
+    "name": null,
+    "vorschlag": false
+  },
+  {
+    "title": "Kartenspiel Munchkin",
+    "description": "Für gemütliche Spieleabende fehlen uns noch die passenden Spiele. Hier dürft ihr gerne Abhilfe schaffen.<br/><br/>Das Spiel findet man auch in jeder guten Spieleabteilung.",
+    "imageUrl": "static/img/munchkin.jpg",
     "productLinks": [
       {
         "linkText": "Munchkin 1 + 2 (Amazon)",
@@ -166,9 +205,9 @@
     "vorschlag": true
   },
   {
-    "title": "Kartenspiel: Ligretto",
-    "description": "Für gemütliche Spieleabende fehlen uns noch die passenden Spiele. Hier dürft ihr gerne Abhilfe schaffen.",
-    "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/81qMZJPb45L._SX425_.jpg",
+    "title": "Kartenspiel Ligretto",
+    "description": "Für gemütliche Spieleabende fehlen uns noch die passenden Spiele. Hier dürft ihr gerne Abhilfe schaffen.<br/><br/>Das Spiel findet man auch in jeder guten Spieleabteilung.",
+    "imageUrl": "static/img/ligretto.jpg",
     "productLinks": [
       {
         "linkText": "Ligretto (Amazon)",
@@ -179,9 +218,35 @@
     "vorschlag": true
   },
   {
-    "title": "Brettspiel: Zug um Zug",
-    "description": "Für gemütliche Spieleabende fehlen uns noch die passenden Spiele. Hier dürft ihr gerne Abhilfe schaffen.",
-    "imageUrl": "https://images-na.ssl-images-amazon.coma/images/I/618Mk1rDkuL._SX425_.jpg",
+    "title": "Kartenspiel Wizard",
+    "description": "Für gemütliche Spieleabende fehlen uns noch die passenden Spiele. Hier dürft ihr gerne Abhilfe schaffen.<br/><br/>Das Spiel findet man auch in jeder guten Spieleabteilung.",
+    "imageUrl": "static/img/wizard.jpg",
+    "productLinks": [
+      {
+        "linkText": "Wizard (Amazon)",
+        "linkUrl": "https://www.amazon.de/gp/product/B00006YYXI/"
+      }
+    ],
+    "name": null,
+    "vorschlag": true
+  },
+  {
+    "title": "Kartenspiel Jungle Speed",
+    "description": "Für gemütliche Spieleabende fehlen uns noch die passenden Spiele. Hier dürft ihr gerne Abhilfe schaffen.<br/><br/>Das Spiel findet man auch in jeder guten Spieleabteilung.",
+    "imageUrl": "static/img/jungle-speed.jpg",
+    "productLinks": [
+      {
+        "linkText": "Jungle Speed (Amazon)",
+        "linkUrl": "https://www.amazon.de/Asmodee-1669-001669-Jungle-Speed/dp/B009CTDHBY"
+      }
+    ],
+    "name": null,
+    "vorschlag": true
+  },
+  {
+    "title": "Brettspiel Zug um Zug",
+    "description": "Für gemütliche Spieleabende fehlen uns noch die passenden Spiele. Hier dürft ihr gerne Abhilfe schaffen.<br/><br/>Das Spiel findet man auch in jeder guten Spieleabteilung.",
+    "imageUrl": "static/img/zug-um-zug.jpg",
     "productLinks": [
       {
         "linkText": "Zug um Zug (Amazon)",
